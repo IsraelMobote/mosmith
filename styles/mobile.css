@@ -33,12 +33,25 @@ header> div {
     content: "≡";
 }
 
+#menuBars.show::before {
+    content: "✖";
+}
+
 #menuBars {
     position: fixed;
     top: 0.5rem;
     right: 1rem;
     color: white;
     font-size: 4rem;
+}
+
+#menuBars.show {
+    background-color: rgb(126, 32, 32);
+    padding: 0 5px;
+    font-size: 3rem;
+    position: fixed;
+    top: 2.1rem;
+    right: 0;
 }
 
 /*------------    Main Section Styling   ----------*/
