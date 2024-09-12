@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(48, 20, 126);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header> img {
+    width: 30%;
+    height: auto;
+    border-radius: 0rem;
+    margin: 1rem;
+}
+
+header> div {
+    width: 20%;
+    position: relative;
+    right: 8rem;
+    font-size: 1.1rem;
+    font-weight: 550;
+    background-color: white;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+#menuBars::before {
+    content: "≡";
+}
+
+#menuBars {
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    color: white;
+    font-size: 4rem;
+}
+
+/*------------    Main Section Styling   ----------*/
+
+#menuItems {
+    display: grid;
+    grid-template-rows: 0fr;
+}
+
+#menuItems.show {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+#menuItems > ul {
+    overflow: hidden;
+    padding: 0 3rem;
+    background-color: rgb(126, 32, 32);
+}
+
+li {
+    list-style-type: none;
+    padding: 0.8rem 0 1.5rem 0;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+li > a:hover {
+    color: gold;
+}
