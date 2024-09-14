@@ -113,7 +113,7 @@ li > a:hover {
 .slidetext {
     width: 50%;
     animation: slidein 7s ease-out infinite;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     padding: 2rem 2rem;
     color: rgb(20, 17, 150);
