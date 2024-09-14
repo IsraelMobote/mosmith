@@ -21,7 +21,7 @@ header> div {
     width: fit-content;
     position: relative;
     right: 6rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 550;
     background-color: white;
     height: fit-content;
@@ -32,13 +32,13 @@ header> div {
 
 @keyframes grow {
     0%{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     50%{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     100%{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -99,4 +99,40 @@ li > a {
 
 li > a:hover {
     color: gold;
+}
+
+.gradient {
+    width: 100%;
+    height: 20rem;
+    background-image: linear-gradient(to bottom right,rgb(7, 168, 29), rgba(255, 255, 255, 0.096)), url("../images/mosmith-heroimage-small.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.slidetext {
+    width: 50%;
+    animation: slidein 7s ease-out infinite;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 2rem 2rem;
+    color: rgb(20, 17, 150);
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    10% { 
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    30% {
+        transform: translateX(0);
+        opacity: 1;
+    }  
+    
+    100% {transform: translateX(0);}
 }
