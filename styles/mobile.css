@@ -104,7 +104,7 @@ li > a:hover {
 .gradient {
     width: 100%;
     height: 20rem;
-    background-image: linear-gradient(to bottom right,rgb(7, 168, 29), rgba(255, 255, 255, 0.096)), url("../images/mosmith-heroimage-small.webp");
+    background-image: linear-gradient(to bottom right,rgb(7, 168, 29), rgba(255, 255, 255, 0.596)), url("../images/mosmith-heroimage-small.webp");
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -116,7 +116,9 @@ li > a:hover {
     font-size: 3rem;
     font-weight: 600;
     padding: 2rem 2rem;
-    color: rgb(20, 17, 150);
+    background-image: linear-gradient(to bottom, yellow, white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes slidein {
