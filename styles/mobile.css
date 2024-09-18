@@ -167,12 +167,28 @@ li > a:hover {
     border: 0;
     border-bottom: 2.2rem solid var(--backgroundColor);
     background-color: rgb(179, 160, 160);
+    animation: grow2 3s infinite;
 }
 .buyAndSell> #buy.color , .buyAndSell> #sell.color{
     background-color: white;
     border-radius: 40px 40px 0 0;
     border: 0;
+    animation: none;
 }
+
+@keyframes grow2 {
+    0% {
+        font-size: 1.3rem;
+    }
+    50% {
+        font-size: 1.6rem;
+    }
+    100% {
+        font-size: 1.3rem;
+    }
+}
+
+
 
 /*------------    buy and sell spaces Styling   ----------*/
 .buyAndSell> #space.color {
