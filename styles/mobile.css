@@ -138,3 +138,69 @@ li > a:hover {
     
     100% {transform: translateX(0);}
 }
+
+.buyAndSell {
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(0, 4, 255) ,blue, white);
+    padding: 1rem 0 0 0;
+    width: 100%;
+    height: 5rem;
+}
+
+.buyAndSell > p {
+    width: 20%;
+    border: 1px solid black;
+    background-color: white;
+    
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+.buyAndSell> .space {
+    border-radius: 0 0 40px 0;
+    background-color: rgba(20, 20, 161, 0.664);
+    border: 0;
+}
+
+#buy , #sell {
+    align-self: center;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2.2rem solid blue;
+}
+.buyAndSell> #buy.color , .buyAndSell> #sell.color{
+    border-radius: 40px 40px 0 0;
+    border: 0;
+}
+.buyAndSell> p.color {
+    border-radius: 0 0 40px 0;
+}
+
+.buyAndSell > #space, .buyAndSell> #space2{
+    background-color: blue;
+    border: 0;
+    
+}
+.buyAndSell > #space.color, .buyAndSell> #space2.color {
+    background-color: blue;
+    border: 0;
+    
+}
+
+
+.buyAndSell> #space1.right {
+    border: 0;
+    background-color: blue;
+    border-radius: 0 0 40px 0;
+}
+
+.buyAndSell> #space1.left {
+    border: 0;
+    background-color: blue;
+    border-radius: 0 0 0 40px ;
+}
+
+.buyAndSell> #space2.color {
+    border-radius: 0 0 0 40px;
+}
