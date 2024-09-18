@@ -25,19 +25,28 @@ const space2 = document.querySelector('#space2');
 
 const buy = document.querySelector('#buy');
 const sell = document.querySelector('#sell');
-buy.addEventListener('click', function() {
+
+buy.addEventListener('click', choseBuy );
+sell.addEventListener('click', choseSell);
+
+choseBuy();
+
+function choseBuy() {
     buy.classList.add('color');
     sell.classList.remove('color');
     space.classList.add('color');
     space1.classList.add('left');
     space1.classList.remove('right');
     space2.classList.remove('color');
-})
-sell.addEventListener('click', function() {
+}
+
+function choseSell() {
     sell.classList.add('color');
     buy.classList.remove('color');
     space.classList.remove('color');
     space1.classList.remove('left');
     space1.classList.add('right');
     space2.classList.add('color');
-})
+}
+
+
