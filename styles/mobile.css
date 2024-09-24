@@ -1,10 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playpen+Sans:wght@100..800&family=Sofadi+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--primaryfont);
 }
 
 :root {
     --backgroundColor : rgb(20, 17, 150);
+    --primaryfont : 'PT Serif', serif;
+    --headingsfont : 'Playpen Sans', cursive;
+    --secondaryfont : 'Sofadi One'; 
+}
+
+h1, h2, h3 {
+    font-family: var(--headingsfont);
 }
 
 header {
@@ -12,6 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--headingsfont);
 }
 
 header> img {
@@ -147,7 +159,7 @@ li > a:hover {
 .buyAndSell {
     display: flex;
     background-image: linear-gradient(to bottom, var(--backgroundColor) , var(--backgroundColor), white);
-    padding: 1rem 0 0 0;
+    padding: 0.2rem 0 0 0;
     width: 100%;
     height: 5rem;
 }
@@ -162,12 +174,12 @@ li > a:hover {
 
 /*------------    buy and sell buttons Styling   ----------*/
 #buy , #sell {
+    font-family: var(--headingsfont);
     align-self: center;
     padding: 10px;
     border: 0;
-    border-bottom: 2.2rem solid var(--backgroundColor);
+    border-bottom: 1.81rem solid var(--backgroundColor);
     background-color: rgb(204, 202, 202);
-    animation: grow2 3s infinite;
 }
 
 .buyAndSell> #buy.color , .buyAndSell> #sell.color{
@@ -175,18 +187,6 @@ li > a:hover {
     border-radius: 40px 40px 0 0;
     border: 0;
     animation: none;
-}
-
-@keyframes grow2 {
-    0% {
-        font-size: 1.3rem;
-    }
-    50% {
-        font-size: 1.6rem;
-    }
-    100% {
-        font-size: 1.3rem;
-    }
 }
 
 /*------------    buy and sell spaces Styling   ----------*/
@@ -217,4 +217,33 @@ li > a:hover {
 
 .buyAndSell> #space1.left {
     border-radius: 0 0 0 40px ;
+}
+
+/*------------    Intro section Styling   ----------*/
+
+.intro > h1 {
+    font-size: 1.9rem;
+    color: rgb(204, 127, 13);
+    padding: 1.5rem 0 0;
+    margin-left: 10px;
+}
+
+.intro > .liner {
+    width: 15%;
+    border: 3px solid var(--backgroundColor);
+    margin-left: 10px;
+    margin-bottom: 2rem;
+}
+
+.intro > p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 10px 10px;
+    color: rgb(12, 12, 63);
+}
+
+.intro span {
+    color: green;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
