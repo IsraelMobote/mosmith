@@ -330,7 +330,7 @@ li > a:hover {
 /*------------ about us section Styling   ----------*/
 
 .aboutUs {
-    margin: 5rem 0 1rem;
+    margin: 5rem 0 2rem;
     padding: 2rem;
     background-color: rgba(180, 7, 45, 0.945);
     font-size: 1.6rem;
@@ -363,7 +363,7 @@ li > a:hover {
 }
 
 .installationserv.animated {
-    animation: moveIn 3s ease-in-out;
+    animation: moveIn 2s;
 }
 
 @keyframes moveIn {
