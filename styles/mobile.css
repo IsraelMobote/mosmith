@@ -360,12 +360,15 @@ li > a:hover {
     color: rgb(5, 5, 51);
     border-radius: 2rem;
     border: 2px solid rgb(201, 192, 192);
-    animation: moveIn 2s;
+}
+
+.installationserv.animated {
+    animation: moveIn 3s ease-in-out;
 }
 
 @keyframes moveIn {
     0% {
-        margin-top: 3rem;
+        margin-top: 10rem;
         opacity: 0;
     }
     100% {

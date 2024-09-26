@@ -50,3 +50,41 @@ function choseSell() {
 }
 
 
+const installationCard = document.querySelector('.installationserv');
+let elementHeight = installationCard.clientHeight;
+
+// listen for scroll event and call animate function
+document.addEventListener('scroll', animate);
+
+// check if element is in view
+function inView() {
+  // get window height
+  var windowHeight = window.innerHeight;
+  // get number of pixels that the document is scrolled
+  var scrollY = window.scrollY
+  
+  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+  var scrollPosition = scrollY + windowHeight;
+  // get element position (distance from the top of the page to the bottom of the element)
+  var elementPosition = installationCard.getBoundingClientRect().top + scrollY;
+  
+  // is scroll position greater than element position? (is element in view?)
+  if (scrollPosition > elementPosition) {
+    return true;
+    console.log('ddd')
+  }
+  
+  return false;
+}
+
+let complete = false;
+
+// animate element when it is in view
+function animate() {
+  // is element in view?
+  if (inView() && complete===false) {
+      installationCard.classList.add('animated')
+      console.log('ss')
+      complete=true
+  }
+}
