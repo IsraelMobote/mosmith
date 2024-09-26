@@ -344,9 +344,9 @@ li > a:hover {
 .aboutUs {
     margin: 5rem 0 2rem;
     padding: 2rem;
-    background-color: rgba(180, 7, 45, 0.945);
+    background-color: rgba(243, 29, 75, 0.945);
     font-size: 1.6rem;
-    color: white;
+    color: rgb(251, 251, 252);
 }
 
 .aboutUs> p {
