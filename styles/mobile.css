@@ -342,7 +342,7 @@ li > a:hover {
 /*------------ about us section Styling   ----------*/
 
 .aboutUs {
-    margin: 5rem 0 2rem;
+    margin: 3rem 0 2rem;
     padding: 2rem;
     background-color: rgba(243, 29, 75, 0.945);
     font-size: 1.6rem;
@@ -374,12 +374,12 @@ li > a:hover {
 }
 
 .installationserv.animated {
-    animation: moveIn 2s;
+    animation: moveIn 3s;
 }
 
 @keyframes moveIn {
     0% {
-        margin-top: 10rem;
+        margin-top: 15rem;
         opacity: 0;
     }
     100% {
