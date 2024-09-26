@@ -19,11 +19,14 @@ h1, h2, h3 {
 }
 
 header {
+    position: fixed;
+    top: 0;
     background-color: var(--backgroundColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var(--headingsfont);
+    z-index: 2;
 }
 
 header> img {
@@ -75,6 +78,7 @@ header> div {
 }
 
 #menuBars.show {
+    position: fixed;
     background-color: rgb(126, 32, 32);
     padding: 0 5px;
     font-size: 3rem;
@@ -91,9 +95,11 @@ header> div {
 }
 
 #menuItems.show {
+    margin-top: 5.8rem;
     display: grid;
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.5s ease-out;
+    z-index: 2;
 }
 
 #menuItems > ul {
@@ -119,12 +125,17 @@ li > a:hover {
 
 /*------------------- gradient card styling ----------------*/
 .gradient {
+    margin-top: 5rem;
     width: 100%;
     height: 20rem;
     background-image: linear-gradient(to bottom right,rgb(180, 7, 45), rgba(255, 255, 255, 0.596)), url("../images/mosmith-heroimage-small.webp");
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.gradient.removeMargin {
+    margin-top: 0;
 }
 
 .slidetext {
@@ -359,7 +370,6 @@ li > a:hover {
     background-color: rgb(240, 241, 247);
     color: rgb(5, 5, 51);
     border-radius: 2rem;
-    border: 2px solid rgb(201, 192, 192);
 }
 
 .installationserv.animated {

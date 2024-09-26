@@ -1,9 +1,11 @@
 const menuBars = document.querySelector('#menuBars');
 const menuItems = document.querySelector('#menuItems');
+const gradientCard = document.querySelector('.gradient');
 
 menuBars.addEventListener('click', function() {
     menuBars.classList.toggle('show');
     menuItems.classList.toggle('show');
+    gradientCard.classList.toggle('removeMargin');
 })
 
 const slideText = document.querySelector('.slidetext');
