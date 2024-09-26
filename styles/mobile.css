@@ -78,7 +78,6 @@ header> div {
 }
 
 #menuBars.show {
-    position: fixed;
     background-color: rgb(126, 32, 32);
     padding: 0 5px;
     font-size: 3rem;
@@ -95,6 +94,8 @@ header> div {
 }
 
 #menuItems.show {
+    position: sticky;
+    top: 5.8rem;
     margin-top: 5.8rem;
     display: grid;
     grid-template-rows: 1fr;
