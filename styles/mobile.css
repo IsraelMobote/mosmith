@@ -383,11 +383,10 @@ li > a:hover {
         margin-top: 100px;
         opacity: 0;
     }
-    70% {
-        opacity: 1;
+    50% {
+        margin-top: 0;
     }
     100% {
-        margin-top: 0;
         opacity: 1;
     }
 }
