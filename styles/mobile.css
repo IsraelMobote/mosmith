@@ -375,7 +375,7 @@ li > a:hover {
 }
 
 .installationserv.animated {
-    animation: moveIn 3s;
+    animation: moveIn 3s ease-out;
 }
 
 @keyframes moveIn {
