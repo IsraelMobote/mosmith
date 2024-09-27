@@ -9,6 +9,7 @@
 
 :root {
     --backgroundColor : rgb(20, 17, 150);
+    --secondaryColor : rgba(51, 9, 99, 0.945);
     --primaryfont : 'PT Serif', serif;
     --headingsfont : 'Playpen Sans', cursive;
     --secondaryfont : 'Sofadi One'; 
@@ -129,7 +130,7 @@ li > a:hover {
     margin-top: 5rem;
     width: 100%;
     height: 20rem;
-    background-image: linear-gradient(to bottom right,rgb(180, 7, 45), rgba(255, 255, 255, 0.596)), url("../images/mosmith-heroimage-small.webp");
+    background-image: linear-gradient(to bottom right, var(--secondaryColor), rgba(255, 255, 255, 0.726)), url("../images/mosmith-heroimage-small.webp");
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -140,7 +141,7 @@ li > a:hover {
 }
 
 .slidetext {
-    width: 50%;
+    width: 70%;
     animation: slidein 7s ease-out infinite;
     font-size: 3rem;
     font-weight: 600;
@@ -236,7 +237,7 @@ li > a:hover {
 
 .intro > h1 {
     font-size: 1.9rem;
-    color: rgb(204, 127, 13);
+    color: black;
     padding: 1.5rem 0 0;
     margin-left: 10px;
 }
@@ -267,7 +268,7 @@ li > a:hover {
 .flipCards > h2 {
     margin: 3rem 0 -1rem;
     text-align: center;
-    color: rgb(204, 127, 13);;
+    color: black;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -344,7 +345,7 @@ li > a:hover {
 .aboutUs {
     margin: 3rem 0 2rem;
     padding: 2rem;
-    background-color: rgba(243, 29, 75, 0.945);
+    background-color: var(--secondaryColor);
     font-size: 1.6rem;
     color: rgb(251, 251, 252);
 }
@@ -374,12 +375,15 @@ li > a:hover {
 }
 
 .installationserv.animated {
-    animation: moveIn 4s;
+    animation: moveIn 2s;
 }
 
 @keyframes moveIn {
     0% {
         margin-top: 20rem;
+        opacity: 0;
+    }
+    50% {
         opacity: 0;
     }
     100% {
