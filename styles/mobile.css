@@ -375,7 +375,7 @@ li > a:hover {
 }
 
 .installationserv.animated {
-    animation: moveIn 2s;
+    animation: moveIn 3s;
 }
 
 @keyframes moveIn {
@@ -383,7 +383,7 @@ li > a:hover {
         margin-top: 20rem;
         opacity: 0;
     }
-    50% {
+    30% {
         opacity: 0;
     }
     100% {
