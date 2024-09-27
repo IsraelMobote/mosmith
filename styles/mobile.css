@@ -237,7 +237,7 @@ li > a:hover {
 
 .intro > h1 {
     font-size: 1.9rem;
-    color: black;
+    color: rgb(44, 42, 42);
     padding: 1.5rem 0 0;
     margin-left: 10px;
 }
@@ -268,7 +268,7 @@ li > a:hover {
 .flipCards > h2 {
     margin: 3rem 0 -1rem;
     text-align: center;
-    color: black;
+    color: rgb(44, 42, 42);
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
