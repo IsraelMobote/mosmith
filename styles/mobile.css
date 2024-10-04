@@ -129,8 +129,8 @@ li > a:hover {
 .gradient {
     margin-top: 5rem;
     width: 100%;
-    height: 20rem;
-    background-image: linear-gradient(to bottom right, var(--secondaryColor), rgba(255, 255, 255, 0.726)), url("../images/mosmith-heroimage-small.webp");
+    height: 15rem;
+    background-image: linear-gradient(to bottom right, var(--secondaryColor), rgba(255, 255, 255, 0.61)), url("../images/mosmith-heroimage-small.webp");
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -146,7 +146,8 @@ li > a:hover {
     font-size: 3.2rem;
     font-weight: 600;
     padding: 2rem 2rem;
-    color: rgb(245, 239, 239);
+    color: white;
+    text-shadow: #f1f1f1;
 }
 
 @keyframes slidein {
@@ -457,13 +458,29 @@ li > a:hover {
     font-size: 1.5rem;
     color: white;
     background-color: navy;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1rem 1rem 0;
+    padding: 1rem 0 0;
+    border: 2px solid rgb(4, 4, 54);
     border-radius: 25px;
 }
 
 .contactSection> p {
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.contactSection p a {
+    color: white
+}
+
+.contactSection p a:hover {
+    color: gold;
+}
+
+.contactSection > p.different {
+    background-color: white;
+    color: rgb(8, 48, 8);
+    font-weight: 700;
+    border-radius: 25px;
 }
 /*------------ footer Styling   ----------*/
 footer {
