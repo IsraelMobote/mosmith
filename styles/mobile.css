@@ -143,12 +143,10 @@ li > a:hover {
 .slidetext {
     width: 70%;
     animation: slidein 7s ease-out infinite;
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 600;
     padding: 2rem 2rem;
-    background-image: linear-gradient(to bottom, rgb(255, 208, 0), white);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(245, 239, 239);
 }
 
 @keyframes slidein {
@@ -250,7 +248,7 @@ li > a:hover {
 }
 
 .intro > p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 500;
     margin: 0 10px 10px;
     color: rgb(12, 12, 63);
@@ -258,7 +256,7 @@ li > a:hover {
 
 .intro span {
     color: green;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -343,7 +341,7 @@ li > a:hover {
 /*------------ about us section Styling   ----------*/
 
 .aboutUs {
-    margin: 3rem 0 2rem;
+    margin: 3rem 0 0;
     padding: 2rem;
     background-color: var(--secondaryColor);
     font-size: 1.6rem;
@@ -365,16 +363,16 @@ li > a:hover {
 
 /*------------ installation section Styling   ----------*/
 
-.installationserv {
+.moveInSection {
     margin: 0 1.5rem 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 2rem;
-    background-color: rgb(240, 241, 247);
+    background-color: white;
     color: rgb(5, 5, 51);
     border-radius: 2rem;
 }
 
-.installationserv.animated {
+.moveInSection.animated {
     animation: moveIn 2.5s ease;
 }
 
@@ -395,16 +393,56 @@ li > a:hover {
     float: right;
 }
 
-.installationserv> p {
+.moveInSection> p {
     margin: 1.2rem 0;
 }
 
-.installationserv span {
+.moveInSection span {
     font-size: 1.5rem;
     font-weight: 600;
     color: rgb(202, 144, 19);
 }
 
+.container{
+    background-color: rgb(247, 247, 250);
+    padding: 2rem 0;
+}
+
+.sellingItems {
+    font-family: var(--secondaryfont);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem;
+    color: rgb(26, 25, 25);
+}
+
+.sellingItems > p {
+    padding: 1rem 0;
+}
+
+.sellingItems> p > span {
+    color: var(--backgroundColor);
+}
+
+.technetwork {
+    font-weight: 600;
+}
+
+.button {
+    font-family: var(--headingsfont);
+    font-weight: 500;
+    background-color: blue;
+    padding: 10px;
+    border: 2px solid navy;
+    border-radius: 15px;
+    color: white;
+    width: fit-content;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--backgroundColor);
+}
 /*------------ footer Styling   ----------*/
 footer {
     margin-top: 12rem;

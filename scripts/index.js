@@ -52,7 +52,7 @@ function choseSell() {
 }
 
 
-const installationCard = document.querySelector('.installationserv');
+const installationCard = document.querySelector('.moveInSection');
 let elementHeight = installationCard.clientHeight;
 
 // listen for scroll event and call animate function
