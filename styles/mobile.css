@@ -454,7 +454,16 @@ li > a:hover {
 }
 
 .contactSection {
-    
+    font-size: 1.5rem;
+    color: white;
+    background-color: navy;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.contactSection> p {
+    padding: 0.5rem 0;
 }
 /*------------ footer Styling   ----------*/
 footer {
