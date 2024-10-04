@@ -374,18 +374,17 @@ li > a:hover {
 }
 
 .moveInSection.animated {
-    animation: moveIn 2.5s ease;
+    animation: moveIn 1.5s ease-out;
 }
 
 @keyframes moveIn {
     0% {
-        margin-top: 100px;
+        transform: translateY(100%);
         opacity: 0;
     }
-    50% {
-        margin-top: 0;
-    }
+
     100% {
+        transform: translateY(0%);
         opacity: 1;
     }
 }
