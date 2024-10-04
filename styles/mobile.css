@@ -414,6 +414,13 @@ li > a:hover {
     font-weight: 700;
     padding: 2rem;
     color: rgb(26, 25, 25);
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
+.sellingItems:hover {
+    color: rgb(26, 25, 25);
+    background-color: white;
 }
 
 .sellingItems > p {
@@ -421,8 +428,9 @@ li > a:hover {
 }
 
 .sellingItems> p > span {
-    color: var(--backgroundColor);
+    color: rgb(39, 186, 245);
 }
+
 
 .technetwork {
     font-weight: 600;
