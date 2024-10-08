@@ -481,6 +481,46 @@ li > a:hover {
     font-weight: 700;
     border-radius: 25px;
 }
+
+.freqAsked h2 {
+    margin: 5rem 0 1rem;
+    text-align: center;
+}
+
+.freqAsked .question {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+}
+
+.freqAsked .question > p {
+    max-width: 70%;
+}
+.freqAsked .question > span {
+    font-size: 1.7rem;
+}
+
+.freqAsked .response {
+    background-color: rgba(7, 107, 7, 0.932);
+    color: white;
+    display: grid;
+    grid-template-rows: 0fr;
+    font-size: 1.3rem;
+}
+
+.freqAsked .response> p {
+    overflow: hidden;
+}
+
+.freqAsked .response.active {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+
 /*------------ footer Styling   ----------*/
 footer {
     margin-top: 12rem;
