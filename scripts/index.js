@@ -119,7 +119,7 @@ function DisplayFaqs() {
     div.classList.add('question');
     const ques = document.createElement('p');
     const symbol = document.createElement('span');
-    symbol.innerHTML = '&#11206;'
+    symbol.innerHTML = '▼'
   
     ques.textContent = element.question;
     div.append(ques);
@@ -138,14 +138,14 @@ function DisplayFaqs() {
 
     let number = 0
 
-    symbol.addEventListener('click', function() {
+    div.addEventListener('click', function() {
       if (number == 0) {
-        symbol.innerHTML = '&#11165;';
+        symbol.innerHTML = '▲';
         number = 1;
         response.classList.add('active');
       }
       else if (number == 1) {
-        symbol.innerHTML = '&#11206;';
+        symbol.innerHTML = '▼';
         number = 0;
         response.classList.remove('active');
       }

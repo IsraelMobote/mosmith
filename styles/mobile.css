@@ -482,6 +482,9 @@ li > a:hover {
     border-radius: 25px;
 }
 
+
+/*------------ frequently asked questions Styling   ----------*/
+
 .freqAsked h2 {
     margin: 5rem 0 1rem;
     text-align: center;
@@ -498,7 +501,7 @@ li > a:hover {
     max-width: 70%;
 }
 .freqAsked .question > span {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .freqAsked .response {
@@ -523,5 +526,32 @@ li > a:hover {
 
 /*------------ footer Styling   ----------*/
 footer {
-    margin-top: 12rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: rgba(100, 33, 7, 0.966);
 }
+
+footer h3 {
+    text-decoration: underline;
+    font-size: 1.4rem;
+    padding: 2rem 0 1rem;
+}
+
+footer p > a {
+    color: black;
+}
+
+footer p {
+    padding: 0.2rem 0;
+    font-size: 1.2rem;
+}
+
+footer .copyright {
+    padding: 4rem 0 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+/*------------ contact page Styling   ----------*/
+
