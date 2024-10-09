@@ -626,6 +626,10 @@ footer .copyright {
     color: rgb(92, 6, 92);;
 }
 
+.purple > p > a {
+    color: rgb(92, 6, 92);;
+}
+
 
 .blue p, .purple p {
     padding: 0.5rem;
