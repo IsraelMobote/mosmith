@@ -576,7 +576,7 @@ footer .copyright {
 
 .purple {
     border: 2px solid var(--secondaryColor);
-    background-color: rgba(241, 231, 241, 0.897);
+    background-color: rgba(253, 252, 253, 0.925);
 }
 
 .blue h2{
@@ -619,7 +619,7 @@ footer .copyright {
 }
 
 .purple .callButton:hover {
-    background-color: rgba(241, 231, 241, 0.897);
+    background-color: rgba(253, 252, 253, 0.925);
     border: 2px solid rgb(92, 6, 92);;
 }
 
