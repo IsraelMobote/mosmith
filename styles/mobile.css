@@ -578,7 +578,7 @@ footer .copyright {
 
 .purple {
     border: 2px solid var(--secondaryColor);
-    background-color: rgba(253, 252, 253, 0.925);
+    background-color: rgba(252, 242, 252, 0.925);
 }
 
 .blue h2{
@@ -621,7 +621,7 @@ footer .copyright {
 }
 
 .purple .callButton:hover {
-    background-color: rgba(253, 252, 253, 0.925);
+    background-color: rgb(252, 242, 252, 0.925);
     border: 2px solid rgb(92, 6, 92);;
 }
 
@@ -646,7 +646,7 @@ footer .copyright {
     padding-top: 3rem;
     position: absolute;
     bottom: 4px;
-	border-bottom: 200px solid rgba(56, 214, 17, 0.849);
+	border-bottom: 200px solid rgba(56, 214, 17, 0.938);
 	border-right: 75px solid transparent;
 	height: 0;
 	width: 50%;
@@ -665,7 +665,7 @@ footer .copyright {
 
 .secondImage {
     margin: 8rem 0 10rem;
-    background-color: rgb(236, 230, 230);
+    background-color: rgb(246, 250, 250);
     padding-bottom: 4rem;
 }
 .secondImage img{
@@ -674,11 +674,13 @@ footer .copyright {
 }
 
 .secondImage p {
+    width: 70%;
     font-size: 1.7rem;
-    padding: 0 1rem;
+    margin: 0 auto;
     margin-top: 2rem;
 }
 
 .secondImage p span {
     font-weight: 600;
+    color: rgb(11, 82, 11);
 }
