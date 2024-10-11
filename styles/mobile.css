@@ -554,7 +554,9 @@ footer .copyright {
 
 
 /*------------ contact page Styling   ----------*/
-
+.heroImage {
+    position: relative;
+}
 .heroImage img {
     margin-top: 5rem;
     width: 100%;
@@ -635,4 +637,28 @@ footer .copyright {
 .blue p, .purple p {
     padding: 0.5rem;
     font-size: 1.4rem;
+}
+
+.trapezoid {
+    font-family: var(--secondaryfont);
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+    position: absolute;
+    bottom: 4px;
+	border-bottom: 200px solid rgb(56, 214, 17);
+	border-right: 75px solid transparent;
+	height: 0;
+	width: 50%;
+}
+
+.heroImage P {
+    font-family: var(--secondaryfont);
+    color: white;
+    width: 40%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2rem;
+    padding: 0 0 0 1.5rem ;
 }
