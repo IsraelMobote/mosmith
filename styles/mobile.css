@@ -47,9 +47,14 @@ header> div {
     height: fit-content;
     border-radius: 1rem;
     padding: 10px;
-    animation: grow 3s infinite;
 }
 
+header > div > p > a  {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    animation: grow 3s infinite;
+}
 @keyframes grow {
     0%{
         font-size: 0.9rem;
