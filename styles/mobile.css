@@ -140,6 +140,10 @@ li > a:hover {
     margin-top: 0;
 }
 
+.heroImag.removeMargin {
+    margin-top: 0;
+}
+
 .slidetext {
     width: 70%;
     animation: slidein 7s ease-out infinite;

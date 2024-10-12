@@ -1,6 +1,6 @@
 const menuBars = document.querySelector('#menuBars');
 const menuItems = document.querySelector('#menuItems');
-const gradientCard = document.querySelector('.gradient');
+const gradientCard = document.querySelector('.heroImag');
 
 menuBars.addEventListener('click', function() {
     menuBars.classList.toggle('show');
