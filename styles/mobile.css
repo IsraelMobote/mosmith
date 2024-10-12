@@ -96,7 +96,7 @@ header> div {
 
 #menuItems.show {
     position: sticky;
-    top: 5.2rem;
+    top: 5rem;
     margin-top: 5.8rem;
     display: grid;
     grid-template-rows: 1fr;
