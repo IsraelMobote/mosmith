@@ -374,7 +374,7 @@ li > a:hover {
 }
 
 .moveInSection.animated {
-    animation: moveIn 1.5s ease-out;
+    animation: moveIn 1s ease-out;
 }
 
 @keyframes moveIn {
