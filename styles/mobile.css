@@ -55,6 +55,7 @@ header > div > p > a  {
     font-size: 0.9rem;
     animation: grow 3s infinite;
 }
+
 @keyframes grow {
     0%{
         font-size: 0.9rem;
