@@ -27,6 +27,9 @@ const space2 = document.querySelector('#space2');
 
 const buy = document.querySelector('#buy');
 const sell = document.querySelector('#sell');
+const parentDivForBuy = document.querySelector('.parentDivForBuy');
+const parentDivForSell = document.querySelector('.parentDivForSell');
+const animation = document.querySelector('.animation');
 
 buy.addEventListener('click', choseBuy );
 sell.addEventListener('click', choseSell);
@@ -40,6 +43,21 @@ function choseBuy() {
     space1.classList.add('left');
     space1.classList.remove('right');
     space2.classList.remove('color');
+
+    parentDivForBuy.classList.remove('hide');
+    parentDivForSell.classList.remove('active');
+
+    // the line below was added so that the animation and the parentdivforBuy can be the same height
+    parentDivForBuy.classList.add('shorten');
+
+    //the line below was added so that the animation can appear anytime the Buy button is clicked before
+    //it is  hidden again by the setTimeout function
+    animation.classList.remove('hide');
+
+    setTimeout(() => {
+      animation.classList.add('hide');
+      parentDivForBuy.classList.remove('shorten');
+    }, 4000);
 }
 
 function choseSell() {
@@ -49,6 +67,9 @@ function choseSell() {
     space1.classList.remove('left');
     space1.classList.add('right');
     space2.classList.add('color');
+
+    parentDivForBuy.classList.add('hide');
+    parentDivForSell.classList.add('active');
 }
 
 
