@@ -256,6 +256,12 @@ li > a:hover {
     display: none;
 }
 
+.parentDivForSell.shorten{
+    height: 20rem;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
 .parentDivForSell.active{
     display: block;
 }
