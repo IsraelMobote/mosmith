@@ -180,11 +180,14 @@ li > a:hover {
 
 /*------------    buy and sell Styling   ----------*/
 .buyAndSell {
+    position: sticky;
+    top: 5.5rem;
     display: flex;
     background-image: linear-gradient(to bottom, var(--backgroundColor) , var(--backgroundColor), white);
     padding: 0.2rem 0 0 0;
     width: 100%;
     height: 5rem;
+    z-index: 5;
 }
 
 .buyAndSell > p {
@@ -197,6 +200,8 @@ li > a:hover {
 
 /*------------    buy and sell buttons Styling   ----------*/
 #buy , #sell {
+    position: sticky;
+    top: 5rem;
     font-family: var(--headingsfont);
     align-self: center;
     padding: 10px;
@@ -254,6 +259,7 @@ li > a:hover {
 
 .parentDivForSell {
     display: none;
+    height: 20rem;
 }
 
 .parentDivForSell.shorten{
