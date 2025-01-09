@@ -187,3 +187,54 @@ function DisplayFaqs() {
 }
 
 DisplayFaqs();
+
+//codes for the slider navigation arrors
+
+const slider = document.querySelectorAll('.usedAppliancesSlider img');
+const sliderRightArrow = document.querySelector('#firstIcon');
+const sliderLeftArrow = document.querySelector('#secondIcon');
+
+
+const sliderButtons = document.querySelectorAll('.sliderButtons p')
+
+
+let specialNumber = 0;
+
+sliderButtons[specialNumber].classList.add('active');
+ 
+
+sliderRightArrow.addEventListener('click', function() {
+  // the two lines of codes below are used to make sure the special Number that changes the transform
+  // styling does not exceed 5 because the images minus the first image is just five
+  if(specialNumber == 5) {
+    specialNumber = -1;};
+
+
+  specialNumber = specialNumber + 1;
+
+   //this three lines of codes below are to color the active slider button below
+  sliderButtons.forEach(element => {
+    element.classList.remove('active');});
+
+  sliderButtons[specialNumber].classList.add('active');
+ 
+  slider.forEach(element => {
+    element.style.transform = `translateX(-${specialNumber*100.7}%)`;
+ });
+});
+
+sliderLeftArrow.addEventListener('click', function() {
+  specialNumber = specialNumber - 1;
+
+  //this three lines of codes below are to color the active slider button below
+  sliderButtons.forEach(element => {
+    element.classList.remove('active'); });
+
+  sliderButtons[specialNumber].classList.add('active');
+ 
+  slider.forEach(element => {
+   element.style.transform = `translateX(-${specialNumber*100.7}%)`;
+});
+});
+
+
