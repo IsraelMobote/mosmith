@@ -81,7 +81,7 @@ header>div>p>a {
 
 #menuBars {
     position: fixed;
-    top: 0.5rem;
+    top: -0.2rem;
     right: 1rem;
     color: white;
     font-size: 4rem;
@@ -110,7 +110,7 @@ header>div>p>a {
     display: grid;
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.5s ease-out;
-    z-index: 2;
+    z-index: 8;
 }
 
 #menuItems>ul {
@@ -187,12 +187,12 @@ li>a:hover {
 /*------------    buy and sell Styling   ----------*/
 .buyAndSell {
     position: sticky;
-    top: 5.5rem;
+    top: 5rem;
     display: flex;
-    background-image: linear-gradient(to bottom, var(--backgroundColor), var(--backgroundColor), white);
+    background-image: linear-gradient(to bottom, rgb(80, 119, 158), rgb(80, 119, 158), white);
     padding: 0.2rem 0 0 0;
     width: 100%;
-    height: 5rem;
+    height: 2.5rem;
     z-index: 5;
 }
 
@@ -201,26 +201,24 @@ li>a:hover {
     border: 1px solid black;
     background-color: white;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 /*------------    buy and sell buttons Styling   ----------*/
 #buy,
 #sell {
-    position: sticky;
-    top: 5rem;
     font-family: var(--headingsfont);
     align-self: center;
-    padding: 10px;
+    padding: 2px;
     border: 0;
-    border-bottom: 1.81rem solid var(--backgroundColor);
+    border-bottom: 0.8rem solid rgb(80, 119, 158);
     background-color: rgb(204, 202, 202);
 }
 
 .buyAndSell>#buy.color,
 .buyAndSell>#sell.color {
     background-color: white;
-    border-radius: 40px 40px 0 0;
+    border-radius: 20px 20px 0 0;
     border: 0;
     animation: none;
 }
@@ -237,7 +235,7 @@ li>a:hover {
 
 .buyAndSell>#space,
 .buyAndSell>#space2 {
-    background-color: var(--backgroundColor);
+    background-color: rgb(80, 119, 158);
     border: 0;
 
 }
@@ -246,7 +244,7 @@ li>a:hover {
 
 .buyAndSell>#space1 {
     border: 0;
-    background-color: var(--backgroundColor);
+    background-color: rgb(80, 119, 158);
 }
 
 .buyAndSell>#space1.right {
@@ -295,7 +293,7 @@ li>a:hover {
 }
 
 .animation>img {
-    animation: rotate 4s ease-out;
+    animation: rotate 2s ease-out;
 }
 
 .animation.hide {
@@ -933,4 +931,61 @@ footer .copyright {
 .sliderButtons p.active {
     background-color: blue;
     padding: 5px;
+}
+
+
+/*-------- Intro text styling for sell section---------*/
+
+.introText {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.introText > p {
+    padding-bottom: 15px;
+}
+
+.introText > p > span {
+    color: green;
+    font-weight: 800;
+}
+
+.contactCardToSell, .linkToContactPage {
+    font-size: 1.4rem;
+    width: 85%;
+    margin: 40px auto;
+    box-shadow: 4px 4px 11px gray;
+    padding-bottom: 1rem;
+}
+
+.contactCardToSell > img {
+    width: 100%;
+    height: 200px;
+}
+
+.contactCardToSell > p {
+    padding: 1rem;
+}
+
+.contactCardToSell > #toSellButton {
+    font-weight: 800;
+    width: fit-content;
+    margin: 1rem auto;
+    border: 2px solid grey;
+    padding: 10px;
+    background-color: rgb(248, 243, 243);
+}
+
+.contactCardToSell > #toSellButton:hover {
+   font-size: 1.6rem;
+}
+
+.linkToContactPage > p {
+    font-weight: 500;
+    padding: 2rem 1rem;
+}
+
+.linkToContactPage > p > a {
+    color: navy;
 }

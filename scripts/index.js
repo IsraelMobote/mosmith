@@ -57,7 +57,7 @@ function choseBuy() {
     setTimeout(() => {
       animation[0].classList.add('hide');
       parentDivForBuy.classList.remove('shorten');
-    }, 4000);
+    }, 2000);
 }
 
 function choseSell() {
@@ -81,7 +81,7 @@ function choseSell() {
     setTimeout(() => {
       animation[1].classList.add('hide');
       parentDivForSell.classList.remove('shorten');
-    }, 4000);
+    }, 2000);
 }
 
 
@@ -119,7 +119,6 @@ function animate() {
   // is element in view?
   if (inView() && complete===false) {
       installationCard.classList.add('animated')
-      console.log('ss')
       complete=true
   }
 }
@@ -143,7 +142,7 @@ faqs =
       }
        ]
 
-const freqAsked = document.querySelector('.freqAsked');
+const freqAsked = document.querySelectorAll('.freqAsked');
 function DisplayFaqs() {
    faqs.forEach(element => {
     
@@ -165,10 +164,14 @@ function DisplayFaqs() {
     para.textContent = element.answer;
     response.append(para);
 
-    freqAsked.append(line);
-    freqAsked.append(div);
-    freqAsked.append(response);
 
+    freqAsked.forEach(element => {
+      element.append(line);
+      element.append(div);
+      element.append(response);
+  
+    });
+  
     let number = 0
 
     div.addEventListener('click', function() {
