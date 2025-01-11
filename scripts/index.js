@@ -2,19 +2,19 @@ const menuBars = document.querySelector('#menuBars');
 const menuItems = document.querySelector('#menuItems');
 const gradientCard = document.querySelector('.gradient');
 
-menuBars.addEventListener('click', function() {
-    menuBars.classList.toggle('show');
-    menuItems.classList.toggle('show');
-    gradientCard.classList.toggle('removeMargin');
+menuBars.addEventListener('click', function () {
+  menuBars.classList.toggle('show');
+  menuItems.classList.toggle('show');
+  gradientCard.classList.toggle('removeMargin');
 })
 
 const slideText = document.querySelector('.slidetext');
-const sentences = ['We dey for you','We go run am asap','We are one text away'];
+const sentences = ['We dey for you', 'We go run am asap', 'We are one text away'];
 let currentSentence = 0;
 
 function slide() {
-    slideText.textContent = sentences[currentSentence];
-    currentSentence = (currentSentence + 1) % sentences.length;
+  slideText.textContent = sentences[currentSentence];
+  currentSentence = (currentSentence + 1) % sentences.length;
 }
 
 setInterval(slide, 7000)
@@ -31,57 +31,58 @@ const parentDivForBuy = document.querySelector('.parentDivForBuy');
 const parentDivForSell = document.querySelector('.parentDivForSell');
 const animation = document.querySelectorAll('.animation');
 
-buy.addEventListener('click', choseBuy );
+buy.addEventListener('click', choseBuy);
 sell.addEventListener('click', choseSell);
 
 choseBuy();
 
 function choseBuy() {
-    buy.classList.add('color');
-    sell.classList.remove('color');
-    space.classList.add('color');
-    space1.classList.add('left');
-    space1.classList.remove('right');
-    space2.classList.remove('color');
+  buy.classList.add('color');
+  sell.classList.remove('color');
+  space.classList.add('color');
+  space1.classList.add('left');
+  space1.classList.remove('right');
+  space2.classList.remove('color');
 
-    parentDivForBuy.classList.remove('hide');
-    parentDivForSell.classList.remove('active');
+  parentDivForBuy.classList.remove('hide');
+  parentDivForSell.classList.remove('active');
 
-    // the line below was added so that the animation and the parentdivforBuy can be the same height
-    parentDivForBuy.classList.add('shorten');
+  // the line below was added so that the animation and the parentdivforBuy can be the same height
+  parentDivForBuy.classList.add('shorten');
 
-    //the line below was added so that the animation can appear anytime the Buy button is clicked before
-    //it is  hidden again by the setTimeout function
-    animation[0].classList.remove('hide');
+  //the line below was added so that the animation can appear anytime the Buy button is clicked before
+  //it is  hidden again by the setTimeout function
+  animation[0].classList.remove('hide');
 
-    setTimeout(() => {
-      animation[0].classList.add('hide');
-      parentDivForBuy.classList.remove('shorten');
-    }, 2000);
+  setTimeout(() => {
+    animation[0].classList.add('hide');
+    parentDivForBuy.classList.remove('shorten');
+  }, 2000);
 }
 
 function choseSell() {
-    sell.classList.add('color');
-    buy.classList.remove('color');
-    space.classList.remove('color');
-    space1.classList.remove('left');
-    space1.classList.add('right');
-    space2.classList.add('color');
+ 
+  sell.classList.add('color');
+  buy.classList.remove('color');
+  space.classList.remove('color');
+  space1.classList.remove('left');
+  space1.classList.add('right');
+  space2.classList.add('color');
 
-    parentDivForBuy.classList.add('hide');
-    parentDivForSell.classList.add('active');
+  parentDivForBuy.classList.add('hide');
+  parentDivForSell.classList.add('active');
 
-     // the line below was added so that the animation and the parentdivforSell can be the same height
-     parentDivForSell.classList.add('shorten');
+  // the line below was added so that the animation and the parentdivforSell can be the same height
+  parentDivForSell.classList.add('shorten');
 
-     //the line below was added so that the animation can appear anytime the Sell button is clicked before
-    //it is  hidden again by the setTimeout function
-    animation[1].classList.remove('hide');
+  //the line below was added so that the animation can appear anytime the Sell button is clicked before
+  //it is  hidden again by the setTimeout function
+  animation[1].classList.remove('hide');
 
-    setTimeout(() => {
-      animation[1].classList.add('hide');
-      parentDivForSell.classList.remove('shorten');
-    }, 2000);
+  setTimeout(() => {
+    animation[1].classList.add('hide');
+    parentDivForSell.classList.remove('shorten');
+  }, 2000);
 }
 
 
@@ -97,18 +98,18 @@ function inView() {
   var windowHeight = window.innerHeight;
   // get number of pixels that the document is scrolled
   var scrollY = window.scrollY
-  
+
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
   var elementPosition = installationCard.getBoundingClientRect().top + scrollY;
-  
+
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
     return true;
     console.log('ddd')
   }
-  
+
   return false;
 }
 
@@ -117,42 +118,43 @@ let complete = false;
 // animate element when it is in view
 function animate() {
   // is element in view?
-  if (inView() && complete===false) {
-      installationCard.classList.add('animated')
-      complete=true
+  if (inView() && complete === false) {
+    installationCard.classList.add('animated')
+    complete = true
   }
 }
 
 faqs =
-       [
-        {question: "what is the mottto of our business",
-          answer: "it is to cool your nights"
-        },
-      {
-        question:  "what products do you sell",
-        answer: "we sell kitchen appliances, televisions and also generators"
-      },
-      {
-        question: "where is the installation services available to ",
-        answer: "to as many locations in nigeria as possible"
-      },
-      {
-        question: "when was Mosmith established",
-        answer: " it was established in the year 2020"
-      }
-       ]
+  [
+    {
+      question: "what is the mottto of our business",
+      answer: "it is to cool your nights"
+    },
+    {
+      question: "what products do you sell",
+      answer: "we sell kitchen appliances, televisions and also generators"
+    },
+    {
+      question: "where is the installation services available to ",
+      answer: "to as many locations in nigeria as possible"
+    },
+    {
+      question: "when was Mosmith established",
+      answer: " it was established in the year 2020"
+    }
+  ]
 
 const freqAsked = document.querySelectorAll('.freqAsked');
 function DisplayFaqs() {
-   faqs.forEach(element => {
-    
+  faqs.forEach(element => {
+
     const line = document.createElement('hr');
     const div = document.createElement('div');
     div.classList.add('question');
     const ques = document.createElement('p');
     const symbol = document.createElement('span');
     symbol.innerHTML = '▼'
-  
+
     ques.textContent = element.question;
     div.append(ques);
     div.append(symbol);
@@ -169,12 +171,12 @@ function DisplayFaqs() {
       element.append(line);
       element.append(div);
       element.append(response);
-  
+
     });
-  
+
     let number = 0
 
-    div.addEventListener('click', function() {
+    div.addEventListener('click', function () {
       if (number == 0) {
         symbol.innerHTML = '▲';
         number = 1;
@@ -198,46 +200,74 @@ const sliderRightArrow = document.querySelector('#firstIcon');
 const sliderLeftArrow = document.querySelector('#secondIcon');
 
 
-const sliderButtons = document.querySelectorAll('.sliderButtons p')
+const sliderButtons = document.querySelectorAll('.sliderButtons p');
+const sliderButtonsDiv = document.querySelector('.sliderButtons');
 
-
+sliderButtonsDiv.classList.add('hide');
 let specialNumber = 0;
 
-sliderButtons[specialNumber].classList.add('active');
- 
+//this variable 'samp' is to make sure that when the right navigation arrow is clicked for the first
+//time, it returns the special number to 0 rather than adding 1 to the number so that the animation will
+// be ended and the first image will be displayed.
+let samp = false;
 
-sliderRightArrow.addEventListener('click', function() {
+slider.forEach(element => {
+  element.classList.add('animate')
+});
+
+sliderButtons[specialNumber].classList.add('active');
+
+
+sliderRightArrow.addEventListener('click', function () {
+
+  sliderButtonsDiv.classList.remove('hide');
+
+  slider.forEach(element => {
+    element.classList.remove('animate')
+  });
+
+
   // the two lines of codes below are used to make sure the special Number that changes the transform
   // styling does not exceed 5 because the images minus the first image is just five
-  if(specialNumber == 5) {
-    specialNumber = -1;};
-
+  if (specialNumber == 5) {
+    specialNumber = -1;
+  };
 
   specialNumber = specialNumber + 1;
 
-   //this three lines of codes below are to color the active slider button below
+  if(samp == false) {
+    specialNumber = 0
+    samp = true
+  }
+
+  //this three lines of codes below are to color the active slider button below
   sliderButtons.forEach(element => {
-    element.classList.remove('active');});
+    element.classList.remove('active');
+  });
 
   sliderButtons[specialNumber].classList.add('active');
- 
+
   slider.forEach(element => {
-    element.style.transform = `translateX(-${specialNumber*100.7}%)`;
- });
+    element.style.transform = `translateX(-${specialNumber * 100.7}%)`;
+  });
 });
 
-sliderLeftArrow.addEventListener('click', function() {
+sliderLeftArrow.addEventListener('click', function () {
+
+  slider.forEach(element => {
+    element.classList.remove('animate')
+  });
+
   specialNumber = specialNumber - 1;
 
   //this three lines of codes below are to color the active slider button below
   sliderButtons.forEach(element => {
-    element.classList.remove('active'); });
+    element.classList.remove('active');
+  });
 
   sliderButtons[specialNumber].classList.add('active');
- 
+
   slider.forEach(element => {
-   element.style.transform = `translateX(-${specialNumber*100.7}%)`;
+    element.style.transform = `translateX(-${specialNumber * 100.7}%)`;
+  });
 });
-});
-
-
