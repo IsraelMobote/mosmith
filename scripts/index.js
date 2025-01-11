@@ -217,21 +217,34 @@ slider.forEach(element => {
 
 sliderButtons[specialNumber].classList.add('active');
 
+sliderLeftArrow.classList.add('hide');
+
 
 sliderRightArrow.addEventListener('click', function () {
 
+  sliderLeftArrow.classList.remove('hide');
+
+  //the line of code below is to show the slider Buttons upon clicking the right navigation arrow.
   sliderButtonsDiv.classList.remove('hide');
 
   slider.forEach(element => {
     element.classList.remove('animate')
   });
 
+  if (specialNumber == 0) {
+    sliderLeftArrow.classList.add('hide');
+  }
+
+  if (specialNumber == 4) {
+    sliderRightArrow.classList.add('hide');
+  }
 
   // the two lines of codes below are used to make sure the special Number that changes the transform
   // styling does not exceed 5 because the images minus the first image is just five
   if (specialNumber == 5) {
     specialNumber = -1;
   };
+
 
   specialNumber = specialNumber + 1;
 
@@ -247,6 +260,11 @@ sliderRightArrow.addEventListener('click', function () {
 
   sliderButtons[specialNumber].classList.add('active');
 
+  if (specialNumber == 1) {
+    sliderLeftArrow.classList.remove('hide');
+  }
+
+
   slider.forEach(element => {
     element.style.transform = `translateX(-${specialNumber * 100.7}%)`;
   });
@@ -254,9 +272,15 @@ sliderRightArrow.addEventListener('click', function () {
 
 sliderLeftArrow.addEventListener('click', function () {
 
+  sliderRightArrow.classList.remove('hide');
+
   slider.forEach(element => {
     element.classList.remove('animate')
   });
+
+  if (specialNumber == 1) {
+    sliderLeftArrow.classList.add('hide');
+  }
 
   specialNumber = specialNumber - 1;
 

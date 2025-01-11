@@ -912,6 +912,11 @@ footer .copyright {
     position: absolute;
     bottom: 30%;
 }
+
+#firstIcon.hide{
+    display: none;
+}
+
 #secondIcon {
     font-size: 15px;
     font-weight: 900;
@@ -919,6 +924,10 @@ footer .copyright {
     bottom: 30%;
     left: 3%;
     box-shadow: -3px 3px 3px grey;
+}
+
+#secondIcon.hide {
+    display: none;
 }
 
 .sliderButtons {
