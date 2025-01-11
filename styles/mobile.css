@@ -204,6 +204,10 @@ li>a:hover {
     font-size: 1rem;
 }
 
+.linkToSell {
+    text-decoration: underline;
+    color: navy;
+}
 /*------------    buy and sell buttons Styling   ----------*/
 #buy,
 #sell {
@@ -834,7 +838,7 @@ footer .copyright {
     overflow: hidden;
     white-space: nowrap;
     padding: 1rem 0;
-    background-color: rgb(240, 235, 235);
+    background-color: rgba(253, 250, 250, 0.671);
     margin: 1rem 0;
 }
 

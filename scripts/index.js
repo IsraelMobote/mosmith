@@ -34,9 +34,15 @@ const animation = document.querySelectorAll('.animation');
 buy.addEventListener('click', choseBuy);
 sell.addEventListener('click', choseSell);
 
+const linkToSell = document.querySelector('.linkToSell');
+linkToSell.addEventListener('click', choseSell);
+
 choseBuy();
 
 function choseBuy() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+
   buy.classList.add('color');
   sell.classList.remove('color');
   space.classList.add('color');
@@ -61,6 +67,8 @@ function choseBuy() {
 }
 
 function choseSell() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
  
   sell.classList.add('color');
   buy.classList.remove('color');
