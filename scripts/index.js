@@ -203,7 +203,7 @@ DisplayFaqs();
 
 //codes for the slider navigation arrors
 
-const slider = document.querySelectorAll('.usedAppliancesSlider img');
+const slider = document.querySelectorAll('.Slider img');
 const sliderRightArrow = document.querySelector('#firstIcon');
 const sliderLeftArrow = document.querySelector('#secondIcon');
 

@@ -833,7 +833,7 @@ footer .copyright {
 
 /*----- Sell Section Styling -----*/
 
-.usedAppliancesSlider {
+.Slider {
     width: 100%;
     height: 20rem;
     overflow: hidden;
@@ -843,14 +843,14 @@ footer .copyright {
     margin: 1rem 0;
 }
 
-.usedAppliancesSlider img {
+.Slider img {
     width: 90%;
     height: 18rem;
     margin: 0 auto;
     padding: 0 5%;
 }
 
-.usedAppliancesSlider img.animate {
+.Slider img.animate {
     animation: slidestop 30s infinite;
 }
 
@@ -858,8 +858,11 @@ footer .copyright {
     0% {
         transform: translateX(0%);
     }
+    6% {
+        transform: translateX(0%);
+    }
 
-    4% {
+    10% {
         transform: translateX(-100.7%);
     }
 
@@ -901,7 +904,7 @@ footer .copyright {
 }
 
 
-.usedAppliancesSlider p {
+.Slider p {
     font-size: 15px;
     font-weight: 900;
     position: absolute;
@@ -1013,4 +1016,10 @@ footer .copyright {
 
 .linkToContactPage > p > a {
     color: navy;
+}
+
+/*--------- Train Page Styling ---------*/
+
+#headerSpace {
+    height: 6rem;
 }
