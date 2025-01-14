@@ -8,6 +8,7 @@
 
 :root {
     --backgroundColor: rgb(20, 17, 150);
+    --tertiaryColor: rgb(80, 119, 158);
     --secondaryColor: rgba(51, 9, 99, 0.945);
     --primaryfont: 'PT Serif', serif;
     --headingsfont: 'Playpen Sans', cursive;
@@ -23,7 +24,7 @@ h3 {
 header {
     position: fixed;
     top: 0;
-    background-color: var(--backgroundColor);
+    background-color: var(--tertiaryColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,7 +140,7 @@ li>a:hover {
     margin-top: 5rem;
     width: 100%;
     height: 15rem;
-    background-image: linear-gradient(to bottom right, var(--secondaryColor), rgba(255, 255, 255, 0.61)), url("../images/mosmith-heroimage-small.webp");
+    background-image: linear-gradient(to bottom right, rgba(80, 119, 158, 0.829), rgba(255, 255, 255, 0.61)), url("../images/mosmith-heroimage-small.webp");
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -189,7 +190,7 @@ li>a:hover {
     position: sticky;
     top: 4.8rem;
     display: flex;
-    background-image: linear-gradient(to bottom, rgb(80, 119, 158), rgb(80, 119, 158), white);
+    background-image: linear-gradient(to bottom, var(--tertiaryColor), var(--tertiaryColor), white);
     padding: 0.2rem 0 0 0;
     width: 100%;
     height: 2.5rem;
@@ -215,7 +216,7 @@ li>a:hover {
     align-self: center;
     padding: 2px;
     border: 0;
-    border-bottom: 0.8rem solid rgb(80, 119, 158);
+    border-bottom: 0.8rem solid var(--tertiaryColor);
     background-color: rgb(204, 202, 202);
 }
 
@@ -239,7 +240,7 @@ li>a:hover {
 
 .buyAndSell>#space,
 .buyAndSell>#space2 {
-    background-color: rgb(80, 119, 158);
+    background-color: var(--tertiaryColor);
     border: 0;
 
 }
@@ -248,7 +249,7 @@ li>a:hover {
 
 .buyAndSell>#space1 {
     border: 0;
-    background-color: rgb(80, 119, 158);
+    background-color: var(--tertiaryColor);
 }
 
 .buyAndSell>#space1.right {
@@ -421,7 +422,7 @@ li>a:hover {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: var(--backgroundColor);
+    background-color: rgb(53, 87, 121);;
     color: white;
 }
 
@@ -568,7 +569,7 @@ li>a:hover {
 .moveInSection .button {
     font-family: var(--headingsfont);
     font-weight: 500;
-    background-color: navy;
+    background-color: rgb(80, 119, 158);;
     padding: 10px;
     margin: 2rem;
     border: 2px solid navy;
@@ -590,10 +591,10 @@ li>a:hover {
 .contactSection {
     font-size: 1.5rem;
     color: white;
-    background-color: navy;
+    background-color: rgb(80, 119, 158);;
     margin: 1rem 1rem;
     padding: 2rem 1rem;
-    border: 2px solid rgb(4, 4, 54);
+    border: 2px solid navy;
     border-radius: 25px;
 }
 
