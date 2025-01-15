@@ -1023,3 +1023,35 @@ footer .copyright {
 #headerSpace {
     height: 6rem;
 }
+
+.privilegesSection h2 {
+    text-align: center;
+}
+
+.privileges {
+    font-size: 1.3rem;
+    width: 75%;
+    margin: 3rem auto;
+    padding: 5%;
+    color: white;
+    line-height: 2rem;
+}
+
+.privileges h3 {
+    margin: 12px 0;
+}
+
+.privileges img {
+    width: 20%;
+}
+.one, .four {
+    background-color: rgba(41, 143, 15, 0.993);
+}
+
+.two {
+    background-color: rgb(150, 111, 15);
+}
+
+.three {
+    background-color: var(--backgroundColor);
+}
