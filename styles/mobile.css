@@ -180,10 +180,6 @@ li>a:hover {
         opacity: 1;
     }
 
-    80% {
-        transform: translateX(0);
-    }
-
     100% {
         transform: translateX(0);
     }
@@ -1007,6 +1003,11 @@ footer .copyright {
     border: 2px solid grey;
     padding: 10px;
     background-color: rgb(248, 243, 243);
+}
+
+#toSellButton a{
+    color: rgb(37, 54, 71);
+    text-decoration: none;
 }
 
 .contactCardToSell > #toSellButton:hover {
