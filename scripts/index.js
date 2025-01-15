@@ -17,7 +17,7 @@ function slide() {
   currentSentence = (currentSentence + 1) % sentences.length;
 }
 
-setInterval(slide, 7000)
+setInterval(slide, 6000)
 
 const space = document.querySelector('#space');
 const space1 = document.querySelector('#space1');
@@ -29,7 +29,6 @@ const buy = document.querySelector('#buy');
 const sell = document.querySelector('#sell');
 const parentDivForBuy = document.querySelector('.parentDivForBuy');
 const parentDivForSell = document.querySelector('.parentDivForSell');
-const animation = document.querySelectorAll('.animation');
 
 buy.addEventListener('click', choseBuy);
 sell.addEventListener('click', choseSell);
@@ -53,17 +52,6 @@ function choseBuy() {
   parentDivForBuy.classList.remove('hide');
   parentDivForSell.classList.remove('active');
 
-  // the line below was added so that the animation and the parentdivforBuy can be the same height
-  parentDivForBuy.classList.add('shorten');
-
-  //the line below was added so that the animation can appear anytime the Buy button is clicked before
-  //it is  hidden again by the setTimeout function
-  animation[0].classList.remove('hide');
-
-  setTimeout(() => {
-    animation[0].classList.add('hide');
-    parentDivForBuy.classList.remove('shorten');
-  }, 2000);
 }
 
 function choseSell() {
@@ -80,17 +68,6 @@ function choseSell() {
   parentDivForBuy.classList.add('hide');
   parentDivForSell.classList.add('active');
 
-  // the line below was added so that the animation and the parentdivforSell can be the same height
-  parentDivForSell.classList.add('shorten');
-
-  //the line below was added so that the animation can appear anytime the Sell button is clicked before
-  //it is  hidden again by the setTimeout function
-  animation[1].classList.remove('hide');
-
-  setTimeout(() => {
-    animation[1].classList.add('hide');
-    parentDivForSell.classList.remove('shorten');
-  }, 2000);
 }
 
 

@@ -156,7 +156,7 @@ li>a:hover {
 
 .slidetext {
     width: 70%;
-    animation: slidein 7s ease-out infinite;
+    animation: slidein 6s ease-out infinite;
     font-size: 3.2rem;
     font-weight: 600;
     padding: 2rem 2rem;
@@ -178,6 +178,10 @@ li>a:hover {
     30% {
         transform: translateX(0);
         opacity: 1;
+    }
+
+    80% {
+        transform: translateX(0);
     }
 
     100% {

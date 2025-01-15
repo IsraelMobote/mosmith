@@ -11,3 +11,73 @@ const slider = document.querySelectorAll('.Slider img');
 slider.forEach(element => {
     element.classList.add('animate')
   });
+
+
+  faqs =
+  [
+    {
+      question: "what is the mottto of our business",
+      answer: "it is to cool your nights"
+    },
+    {
+      question: "what products do you sell",
+      answer: "we sell kitchen appliances, televisions and also generators"
+    },
+    {
+      question: "where is the installation services available to ",
+      answer: "to as many locations in nigeria as possible"
+    },
+    {
+      question: "when was Mosmith established",
+      answer: " it was established in the year 2020"
+    }
+  ]
+
+const freqAsked = document.querySelectorAll('.freqAsked');
+function DisplayFaqs() {
+  faqs.forEach(element => {
+
+    const line = document.createElement('hr');
+    const div = document.createElement('div');
+    div.classList.add('question');
+    const ques = document.createElement('p');
+    const symbol = document.createElement('span');
+    symbol.innerHTML = '▼'
+
+    ques.textContent = element.question;
+    div.append(ques);
+    div.append(symbol);
+
+    const response = document.createElement('div');
+    response.classList.add('response');
+
+    const para = document.createElement('p');
+    para.textContent = element.answer;
+    response.append(para);
+
+
+    freqAsked.forEach(element => {
+      element.append(line);
+      element.append(div);
+      element.append(response);
+
+    });
+
+    let number = 0
+
+    div.addEventListener('click', function () {
+      if (number == 0) {
+        symbol.innerHTML = '▲';
+        number = 1;
+        response.classList.add('active');
+      }
+      else if (number == 1) {
+        symbol.innerHTML = '▼';
+        number = 0;
+        response.classList.remove('active');
+      }
+    })
+  });
+}
+
+DisplayFaqs();
