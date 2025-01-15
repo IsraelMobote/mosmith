@@ -1020,6 +1020,12 @@ footer .copyright {
 
 /*--------- Train Page Styling ---------*/
 
+.introText .bold {
+    font-weight: 900;
+    font-size: 1.9rem;
+    color: rgb(4, 28, 54);
+}
+
 #headerSpace {
     height: 6rem;
 }
