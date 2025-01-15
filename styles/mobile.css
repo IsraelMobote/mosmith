@@ -1025,14 +1025,20 @@ footer .copyright {
 }
 
 .privilegesSection h2 {
+    width: 80%;
+    padding: 1rem;
+    margin: 130px auto 0;
     text-align: center;
+    color: rgb(37, 54, 71);
+    border: 2px solid rgb(37, 54, 71);
+    border-radius: 20px;
 }
 
 .privileges {
     font-size: 1.3rem;
     width: 75%;
     margin: 3rem auto;
-    padding: 5%;
+    padding: 3rem 5%;
     color: white;
     line-height: 2rem;
 }
