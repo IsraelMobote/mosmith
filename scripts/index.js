@@ -129,7 +129,8 @@ faqs =
     }
   ]
 
-const freqAsked = document.querySelectorAll('.freqAsked');
+const freqAsked = document.querySelector('.freqAsked');
+
 function DisplayFaqs() {
   faqs.forEach(element => {
 
@@ -151,13 +152,10 @@ function DisplayFaqs() {
     para.textContent = element.answer;
     response.append(para);
 
+      freqAsked.append(line);
+      freqAsked.append(div);
+      freqAsked.append(response);
 
-    freqAsked.forEach(element => {
-      element.append(line);
-      element.append(div);
-      element.append(response);
-
-    });
 
     let number = 0
 

@@ -556,7 +556,10 @@ li>a:hover {
 
 
 .technetwork {
+    width: 85%;
+    margin: 5rem auto 8rem;
     font-weight: 600;
+    border: 2px solid navy;
 }
 
 .technetwork img {
@@ -589,10 +592,11 @@ li>a:hover {
 }
 
 .contactSection {
+    width: 80%;
     font-size: 1.5rem;
     color: white;
     background-color: rgb(80, 119, 158);;
-    margin: 1rem 1rem;
+    margin: 7rem auto;
     padding: 2rem 1rem;
     border: 2px solid navy;
     border-radius: 25px;
@@ -1073,7 +1077,7 @@ footer .copyright {
     background-color: var(--backgroundColor);
 }
 
-.fullImage {
+.fulImage {
     margin-top: 4rem;
     width: 100%;
     height: 350px;
