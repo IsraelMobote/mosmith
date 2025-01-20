@@ -1111,3 +1111,79 @@ footer .copyright {
     color: rgb(37, 54, 71);
     background-color: white;
 }
+
+/*----- about page styling ------*/
+
+.increasedMarginTop {
+    margin-top: 5.4rem;
+    position: relative;
+    height: 21rem;
+    background-color: rgba(37, 54, 71, 0.61);
+}
+
+.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 21rem;
+    z-index: -1;
+}
+
+.increasedMarginTop p, .increasedMarginTop h1 {
+    color: white;
+    text-align: center;
+}
+
+.increasedMarginTop h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(30, 255, 0);
+    padding: 1.5rem 0;
+}
+
+.increasedMarginTop p {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+/*---- Vision and Mision styling  -----*/
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex p {
+    font-family: var(--headingsfont);
+    font-size: 1.3rem;
+    padding: 1rem 15%;
+}
+
+.flex p.active {
+    border-bottom: 4px solid rgb(30, 255, 0);
+}
+
+.visionSection, .purposeSection {
+    display: none;
+    padding: 1.5rem 1.5rem;
+}
+
+.visionSection.active {
+    display: block;
+}
+
+.purposeSection.active {
+    display: block;
+}
+
+.visionSection p, .purposeSection p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+}
+
+.visionSection h2, .purposeSection h2 {
+    color: rgb(46, 70, 95);
+}
