@@ -1220,3 +1220,42 @@ footer .copyright {
     width: 100%;
     height: 200px;
 }
+
+/*----- Our Impact Section Styling ------*/
+.ourImpact {
+    position: relative;
+    width: 85%;
+    height: 550px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color: rgba(46, 70, 95, 0.842);
+    color: white;
+}
+
+.ourImpact img {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+}
+
+.ourImpact p {
+    padding: 1rem 1rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.ourImpact h2 {
+    padding: 2rem 1rem 0;
+    color: goldenrod;
+}
+
+.ourImpact .alignCenter {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+#completedJobs, #noOfYears {
+    font-size: 2.5rem;
+    color: goldenrod;
+}

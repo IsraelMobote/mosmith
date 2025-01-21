@@ -99,3 +99,50 @@ function DisplayFaqs() {
 }
 
 DisplayFaqs();
+
+const completedJobs = document.querySelector('#completedJobs');
+const noOfYears = document.querySelector('#noOfYears');
+
+const targetNumber = 500;
+const targetNumbertwo = 4; // Replace with your desired target number
+const duration = 2000; // Animation duration in milliseconds
+
+let currentValue = 0;
+let currentValuetwo = 0;
+// there are two currentvalue variables because they are not increasing at the same increments.
+
+const increment = Math.ceil(targetNumber / (duration / 16));
+const incrementtwo = Math.abs(targetNumbertwo / (duration / 16)); // Calculate increment value
+
+
+function animateCounter() {
+  if (currentValue >= targetNumber) {
+    completedJobs.textContent = targetNumber;
+    return;
+  }
+
+  currentValue += increment;
+  completedJobs.textContent = currentValue;
+
+  requestAnimationFrame(animateCounter);
+};
+
+
+function animateCountertwo() {
+  if (currentValuetwo >= targetNumbertwo) {
+    noOfYears.textContent =  `${targetNumbertwo}+`;
+    return;
+  }
+
+  currentValuetwo += incrementtwo;
+  noOfYears.textContent = `${currentValuetwo.toFixed(1)}+`;
+  // I used toFixed() method to display one decimal place digits and not the actual number of about 
+  // 8 decimal places or more
+
+  requestAnimationFrame(animateCountertwo);
+};
+
+
+animateCounter();
+animateCountertwo();
+
