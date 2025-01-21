@@ -1187,3 +1187,19 @@ footer .copyright {
 .visionSection h2, .purposeSection h2 {
     color: rgb(46, 70, 95);
 }
+
+/*---------- Why Choose Us Styling ----------*/
+
+.featuresToChooseUs {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 80px auto;
+    box-shadow: 4px 4px 11px gray;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.featuresToChooseUs h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
