@@ -72,7 +72,7 @@ function choseSell() {
 
 
 const installationCard = document.querySelector('.moveInSection');
-let elementHeight = installationCard.clientHeight;
+
 
 // listen for scroll event and call animate function
 document.addEventListener('scroll', animate);
@@ -87,12 +87,11 @@ function inView() {
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = installationCard.getBoundingClientRect().top + scrollY;
+  var elementPosition = installationCard.getBoundingClientRect().top + scrollY + windowHeight;
 
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
     return true;
-    console.log('ddd')
   }
 
   return false;

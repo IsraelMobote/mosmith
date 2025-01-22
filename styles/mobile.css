@@ -480,6 +480,7 @@ li>a:hover {
 /*------------ installation section Styling   ----------*/
 
 .moveInSection {
+    opacity: 0;
     margin: 1rem 1.5rem 3rem;
     font-size: 1.6rem;
     padding: 2rem 0 2rem;
@@ -489,6 +490,7 @@ li>a:hover {
 }
 
 .moveInSection.animated {
+    opacity: 1;
     animation: moveIn 1s ease-out;
 }
 
@@ -1190,10 +1192,15 @@ footer .copyright {
 
 /*---------- Why Choose Us Styling ----------*/
 
+.whyChooseUs {
+    background-color:  rgba(46, 70, 95, 0.24);
+    padding: 0 0 2rem;
+}
+
 .whyChooseUs h2{
     text-align: center;
     background-color: aqua;
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin: 5rem 0 0;
     color: white;
     background-color: navy;
@@ -1202,18 +1209,19 @@ footer .copyright {
 .featuresToChooseUs {
     font-size: 1.2rem;
     width: 80%;
-    margin: 30px auto;
+    margin: 40px auto;
     box-shadow: 4px 4px 11px gray;
     padding: 1rem;
     text-align: center;
     line-height: 2rem;
+    background-color: white;
 }
 
 .featuresToChooseUs h3 {
     font-size: 1.7rem;
     color: rgb(46, 70, 95);
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .featuresToChooseUs img {
@@ -1224,38 +1232,53 @@ footer .copyright {
 /*----- Our Impact Section Styling ------*/
 .ourImpact {
     position: relative;
-    width: 85%;
-    height: 550px;
-    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+    margin: 8rem auto 1rem;
     font-size: 1.5rem;
     background-color: rgba(46, 70, 95, 0.842);
     color: white;
+    border-radius: 2rem;
 }
 
 .ourImpact img {
     position: absolute;
     width: 100%;
-    height: 550px;
+    height: 600px;
     z-index: -1;
+    border-radius: 2rem;
 }
 
 .ourImpact p {
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 3rem;
     font-weight: 600;
     line-height: 2.5rem;
+    text-align: center;
 }
 
 .ourImpact h2 {
-    padding: 2rem 1rem 0;
+    padding: 2.2rem 1rem 0;
     color: goldenrod;
+    text-align: center;
+}
+
+.ourImpact span {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 0.5rem;
+    margin: 0.7rem 0 1.9rem;
 }
 
 .ourImpact .alignCenter {
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0;
 }
 
 #completedJobs, #noOfYears {
     font-size: 2.5rem;
     color: goldenrod;
+    padding: 2px;
+    margin: 0;
 }

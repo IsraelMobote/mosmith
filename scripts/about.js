@@ -142,7 +142,39 @@ function animateCountertwo() {
   requestAnimationFrame(animateCountertwo);
 };
 
+const ourImpact = document.querySelector('.ourImpact');
 
-animateCounter();
-animateCountertwo();
+document.addEventListener('scroll', activateCounter);
+
+// check if element is in view
+function inView() {
+  // get window height
+  var windowHeight = window.innerHeight;
+  // get number of pixels that the document is scrolled
+  var scrollY = window.scrollY
+
+  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+  var scrollPosition = scrollY + windowHeight;
+  // get element position (distance from the top of the page to the bottom of the element)
+  var elementPosition = ourImpact.getBoundingClientRect().top + scrollY + windowHeight;
+
+  // is scroll position greater than element position? (is element in view?)
+  if (scrollPosition > elementPosition) {
+    return true;
+  }
+
+  return false;
+}
+
+let complete = false;
+
+// animate element when it is in view
+function activateCounter() {
+  // is element in view?
+  if (inView() && complete === false) {
+    animateCounter();
+    animateCountertwo();    
+    complete = true
+  }
+}
 
