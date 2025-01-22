@@ -1232,11 +1232,11 @@ footer .copyright {
 /*----- Our Impact Section Styling ------*/
 .ourImpact {
     position: relative;
-    width: 90%;
-    height: 600px;
+    width: 95%;
+    height: 700px;
     margin: 8rem auto 1rem;
     font-size: 1.5rem;
-    background-color: rgba(46, 70, 95, 0.842);
+    background-color: rgba(46, 70, 95, 0.897);
     color: white;
     border-radius: 2rem;
 }
@@ -1244,7 +1244,7 @@ footer .copyright {
 .ourImpact img {
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 700px;
     z-index: -1;
     border-radius: 2rem;
 }
