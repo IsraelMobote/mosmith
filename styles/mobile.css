@@ -478,30 +478,13 @@ li>a:hover {
 /*------------ installation section Styling   ----------*/
 
 .moveInSection {
-    opacity: 0;
+    opacity: 1;
     margin: 1rem 1.5rem 3rem;
     font-size: 1.6rem;
     padding: 2rem 0 2rem;
     background-color: white;
     color: rgb(5, 5, 51);
     border-radius: 2rem;
-}
-
-.moveInSection.animated {
-    opacity: 1;
-    animation: moveIn 1s ease-out;
-}
-
-@keyframes moveIn {
-    0% {
-        transform: translateY(40%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
 }
 
 #float {
