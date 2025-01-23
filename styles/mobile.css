@@ -1027,16 +1027,22 @@ footer .copyright {
     color: navy;
 }
 
-/*--------- Train Page Styling ---------*/
+/*--------- Technicians Page Styling ---------*/
+
+.headingOne {
+    margin: 4.8rem 0 0;
+    padding: 2.5rem 0 0.3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    color: navy
+}
+
 
 .introText .bold {
     font-weight: 900;
     font-size: 1.9rem;
     color: rgb(37, 54, 71);
-}
-
-#headerSpace {
-    height: 6rem;
 }
 
 .privilegesSection h2 {

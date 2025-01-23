@@ -6,6 +6,15 @@ menuBars.addEventListener('click', function () {
   menuItems.classList.toggle('show');
 })
 
+document.addEventListener('scroll', function() {
+  menuItems.classList.add('addSticky');
+
+  if (window.scrollY === 0) {
+   menuItems.classList.remove('addSticky');
+  }
+
+});
+
 const slider = document.querySelectorAll('.Slider img');
 
 slider.forEach(element => {
