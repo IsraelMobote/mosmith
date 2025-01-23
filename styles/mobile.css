@@ -556,6 +556,7 @@ li>a:hover {
 
 
 .technetwork {
+    opacity: 1;
     width: 85%;
     margin: 5rem auto 8rem;
     font-weight: 600;
@@ -1306,3 +1307,5 @@ footer .copyright {
 .purple h3 {
     color: #5C065C;
 }
+
+/*----------- pop out animation styling ----------*/
