@@ -1193,7 +1193,7 @@ footer .copyright {
 /*---------- Why Choose Us Styling ----------*/
 
 .aboutSection {
-    background-color:  rgba(46, 70, 95, 0.24);
+    background-color:  rgba(46, 70, 95, 0.062);
     padding: 0 0 2rem;
 }
 
@@ -1234,7 +1234,7 @@ footer .copyright {
     position: relative;
     width: 95%;
     height: 700px;
-    margin: 8rem auto 1rem;
+    margin: 8rem auto 8rem;
     font-size: 1.5rem;
     background-color: rgba(46, 70, 95, 0.897);
     color: white;
