@@ -804,8 +804,8 @@ footer .copyright {
 .heroImage P {
     font-family: var(--secondaryfont);
     color: white;
-    width: 40%;
-    font-size: 2.5rem;
+    width: 45%;
+    font-size: 2.3rem;
     font-weight: 700;
     position: absolute;
     bottom: 2rem;
