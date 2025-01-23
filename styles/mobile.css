@@ -1306,3 +1306,12 @@ footer .copyright {
 }
 
 /*----------- pop out animation styling ----------*/
+
+.growIn {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.growIn.animateTwo {
+    opacity: 1;
+}
