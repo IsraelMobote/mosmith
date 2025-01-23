@@ -104,6 +104,7 @@ body {
 #menuItems {
     display: grid;
     grid-template-rows: 0fr;
+    width: 100%;
 }
 
 #menuItems.show {
