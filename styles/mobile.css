@@ -1293,6 +1293,14 @@ footer .copyright {
     font-size: 1.2rem;
 }
 
+.blue h3 {
+    color: #141196;
+}
+
+.purple h3 {
+    color: #5C065C;
+}
+
 .values.values.values {
     background-color: white;
 }
