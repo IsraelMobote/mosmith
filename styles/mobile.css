@@ -1284,7 +1284,9 @@ footer .copyright {
 }
 
 /*---------- Our Values Section --------*/
-
+.aboutSection .values {
+    background-color: rgb(255, 255, 255);
+}
 .values img {
     width: 20%;
 }
@@ -1299,8 +1301,4 @@ footer .copyright {
 
 .purple h3 {
     color: #5C065C;
-}
-
-.values.values.values {
-    background-color: white;
 }
