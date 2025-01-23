@@ -1309,9 +1309,11 @@ footer .copyright {
 
 .growIn {
     opacity: 0;
-    transition: opacity 0.5s;
+    padding-top: 50px;
+    transition: opacity 0.5s, padding-top 0.5s;
 }
 
 .growIn.animateTwo {
     opacity: 1;
+    padding-top: 0;
 }

@@ -7,13 +7,13 @@ menuBars.addEventListener('click', function () {
   menuItems.classList.toggle('show');
 })
 
-document.addEventListener('scroll', function() {
-    menuItems.classList.add('addSticky');
+document.addEventListener('scroll', function () {
+  menuItems.classList.add('addSticky');
 
-    if (window.scrollY === 0) {
-     menuItems.classList.remove('addSticky');
-    }
-  
+  if (window.scrollY === 0) {
+    menuItems.classList.remove('addSticky');
+  }
+
 });
 
 const slideText = document.querySelector('.slidetext');
@@ -65,7 +65,7 @@ function choseBuy() {
 function choseSell() {
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
- 
+
   sell.classList.add('color');
   buy.classList.remove('color');
   space.classList.remove('color');
@@ -80,13 +80,18 @@ function choseSell() {
 
 
 const installationCard = document.querySelector('.moveInSection');
+const growIn = document.querySelector('.growIn');
 
 
 // listen for scroll event and call animate function
-document.addEventListener('scroll', animate);
+document.addEventListener('scroll', function () {
+  animate();
+  show()
+}
+);
 
 // check if element is in view
-function inView() {
+function inView(element) {
   // get window height
   var windowHeight = window.innerHeight;
   // get number of pixels that the document is scrolled
@@ -95,7 +100,7 @@ function inView() {
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = installationCard.getBoundingClientRect().top + scrollY + windowHeight / 3;
+  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 3;
 
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
@@ -105,50 +110,25 @@ function inView() {
   return false;
 }
 
-
-
-function inViewTwo() {
-  
-    // get window height
-  var windowHeight = window.innerHeight;
-  // get number of pixels that the document is scrolled
-  var scrollY = window.scrollY
-
-  // get current scroll position (distance from the top of the page to the bottom of the current viewport)
-  var scrollPosition = scrollY + windowHeight;
-  // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = growIn.getBoundingClientRect().top + scrollY + windowHeight / 1.2;
-  // is scroll position greater than element position? (is element in view?)
-  if (scrollPosition > elementPosition) {
-    console.log('make sense');
-    return true;
-  }
-  
-
-  return false;
-  };
-  
-
-
-
-
 let complete = false;
-
-const growIn = document.querySelector('.growIn');
-growIn.classList.remove('animateTwo');
-
+let completenew = false;
 // animate element when it is in view
 function animate() {
   // is element in view?
-  if (inView() && complete === false) {
+  if (inView(installationCard) && complete === false) {
     installationCard.classList.add('animated')
     complete = true
   }
+}
 
-  if(inViewTwo()) {
+function show() {
+  if (inView(growIn) && completenew === false) {
     growIn.classList.add('animateTwo');
-  };
-};
+    completenew = true;
+  }
+}
+
+
 
 faqs =
   [
@@ -193,9 +173,9 @@ function DisplayFaqs() {
     para.textContent = element.answer;
     response.append(para);
 
-      freqAsked.append(line);
-      freqAsked.append(div);
-      freqAsked.append(response);
+    freqAsked.append(line);
+    freqAsked.append(div);
+    freqAsked.append(response);
 
 
     let number = 0
