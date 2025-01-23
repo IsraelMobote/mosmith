@@ -153,10 +153,14 @@ function animateCountertwo() {
 
 const ourImpact = document.querySelector('.ourImpact');
 
-document.addEventListener('scroll', activateCounter);
+document.addEventListener('scroll', function () {
+  activateCounter();
+  show();
+}
+);
 
 // check if element is in view
-function inView() {
+function inView(element) {
   // get window height
   var windowHeight = window.innerHeight;
   // get number of pixels that the document is scrolled
@@ -165,7 +169,7 @@ function inView() {
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = ourImpact.getBoundingClientRect().top + scrollY + windowHeight;
+  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 2;
 
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
@@ -180,10 +184,23 @@ let complete = false;
 // animate element when it is in view
 function activateCounter() {
   // is element in view?
-  if (inView() && complete === false) {
+  if (inView(ourImpact) && complete === false) {
     animateCounter();
     animateCountertwo();    
     complete = true
   }
+}
+
+const growIn = document.querySelectorAll('.growIn');
+
+
+function show() {
+
+  growIn.forEach(sample => {
+    if (inView(sample)) {
+      sample.classList.add('animateTwo');
+    }
+  });
+  
 }
 
