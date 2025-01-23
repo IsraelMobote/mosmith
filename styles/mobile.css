@@ -1192,12 +1192,12 @@ footer .copyright {
 
 /*---------- Why Choose Us Styling ----------*/
 
-.whyChooseUs {
+.aboutSection {
     background-color:  rgba(46, 70, 95, 0.24);
     padding: 0 0 2rem;
 }
 
-.whyChooseUs h2{
+.aboutSection h2{
     text-align: center;
     background-color: aqua;
     padding: 2rem 0;
@@ -1281,4 +1281,18 @@ footer .copyright {
     color: goldenrod;
     padding: 2px;
     margin: 0;
+}
+
+/*---------- Our Values Section --------*/
+
+.values img {
+    width: 20%;
+}
+
+.values p {
+    font-size: 1.2rem;
+}
+
+.values.values.values {
+    background-color: white;
 }
