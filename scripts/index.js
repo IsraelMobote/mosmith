@@ -80,7 +80,7 @@ function choseSell() {
 
 
 const installationCard = document.querySelector('.moveInSection');
-const growIn = document.querySelector('.growIn');
+const growIn = document.querySelectorAll('.growIn');
 
 
 // listen for scroll event and call animate function
@@ -111,7 +111,7 @@ function inView(element) {
 }
 
 let complete = false;
-let completenew = false;
+
 // animate element when it is in view
 function animate() {
   // is element in view?
@@ -122,10 +122,13 @@ function animate() {
 }
 
 function show() {
-  if (inView(growIn) && completenew === false) {
-    growIn.classList.add('animateTwo');
-    completenew = true;
-  }
+
+  growIn.forEach(sample => {
+    if (inView(sample)) {
+      sample.classList.add('animateTwo');
+    }
+  });
+  
 }
 
 
