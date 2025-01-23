@@ -106,6 +106,7 @@ function inView() {
 }
 
 
+
 function inViewTwo() {
   
     // get window height
@@ -120,7 +121,6 @@ function inViewTwo() {
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
     console.log('make sense');
-    growIn.classList.add('animateTwo');
     return true;
   }
   
@@ -135,6 +135,7 @@ function inViewTwo() {
 let complete = false;
 
 const growIn = document.querySelector('.growIn');
+growIn.classList.remove('animateTwo');
 
 // animate element when it is in view
 function animate() {
@@ -144,7 +145,9 @@ function animate() {
     complete = true
   }
 
-  inViewTwo();
+  if(inViewTwo()) {
+    growIn.classList.add('animateTwo');
+  };
 };
 
 faqs =
