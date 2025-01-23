@@ -5,8 +5,16 @@ const gradientCard = document.querySelector('.gradient');
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
-  gradientCard.classList.toggle('removeMargin');
 })
+
+document.addEventListener('scroll', function() {
+    menuItems.classList.add('addSticky');
+
+    if (window.scrollY === 0) {
+     menuItems.classList.remove('addSticky');
+    }
+  
+});
 
 const slideText = document.querySelector('.slidetext');
 const sentences = ['We dey for you', 'We go run am asap', 'We are one text away'];

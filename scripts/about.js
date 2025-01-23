@@ -8,6 +8,15 @@ menuBars.addEventListener('click', function() {
     gradientCard.classList.toggle('removeMargin');
 })
 
+document.addEventListener('scroll', function() {
+  menuItems.classList.add('addSticky');
+
+  if (window.scrollY === 0) {
+   menuItems.classList.remove('addSticky');
+  }
+
+});
+
 
 const vision = document.querySelector('#vision');
 const purpose = document.querySelector('#purpose');
