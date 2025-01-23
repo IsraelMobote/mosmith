@@ -853,9 +853,6 @@ footer .copyright {
     height: 18rem;
     margin: 0 auto;
     padding: 0 5%;
-}
-
-.Slider img.animate {
     animation: slidestop 30s infinite;
 }
 
