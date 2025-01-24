@@ -89,7 +89,7 @@ header>div>p>a {
 }
 
 #menuBars.show {
-    background-color: rgb(126, 32, 32);
+    background-color: rgba(41, 4, 4, 0.938);
     padding: 0 5px;
     font-size: 3rem;
     position: fixed;
@@ -123,7 +123,7 @@ body {
 #menuItems>ul {
     overflow: hidden;
     padding: 0 3rem;
-    background-color: rgb(126, 32, 32);
+    background-color: rgba(41, 4, 4, 0.938);
 }
 
 li {
