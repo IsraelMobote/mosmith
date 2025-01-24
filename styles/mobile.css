@@ -30,17 +30,14 @@ header {
     align-items: center;
     font-family: var(--headingsfont);
     z-index: 15;
-}
-
-header.show {
-    background-color: rgb(41, 4, 4);
+    background-color: transparent;
 }
 
 header>img {
     width: 30%;
     height: auto;
     border-radius: 0rem;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
 }
 
 header>div {
@@ -93,12 +90,19 @@ header>div>p>a {
 }
 
 #menuBars.show {
-    background-color: rgb(41, 4, 4);
     padding: 0 5px;
     font-size: 3rem;
+    top: 0.2rem;
+    right: 0.5rem;
+}
+
+.headerBackground {
     position: fixed;
-    top: 1.2rem;
-    right: 0;
+    top: 0rem;
+    width: 100%;
+    height: 4.8rem;
+    background-color: var(--tertiaryColor);
+    z-index: 12;
 }
 
 /*------------    Main Section Styling   ----------*/
@@ -118,10 +122,9 @@ body {
     top: 0rem;
     display: grid;
     grid-template-rows: 1fr;
-    transition: grid-template-rows 0.5s ease-out;
-    z-index: 10;
+    transition: grid-template-rows 0.8s ease-out;
+    z-index: 13;
     height: 100vh;
-    padding-top: 5rem;
 }
 
 #menuItems>ul {
@@ -133,6 +136,10 @@ body {
 li {
     list-style-type: none;
     padding: 0.8rem 0 1.5rem 0;
+}
+
+#firstElement {
+    padding-top: 10rem;
 }
 
 li>a {
