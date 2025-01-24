@@ -969,7 +969,7 @@ footer .copyright {
     width: 85%;
     margin: 80px auto;
     box-shadow: 4px 4px 11px gray;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .contactCardToSell > img {
