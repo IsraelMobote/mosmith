@@ -6,6 +6,9 @@ const partToHide = document.querySelectorAll('.partToHide');
 const header = document.querySelector('.header');
 const divToHide = document.querySelector('.divToHide');
 
+let checkNumber = 0;
+
+
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
@@ -13,8 +16,21 @@ menuBars.addEventListener('click', function () {
     element.classList.toggle('hide');
   });
   header.classList.toggle('show');
+  
 
-  if 
+  checkNumber = checkNumber + 1;
+
+  if (checkNumber % 2 === 1) {
+    setTimeout(() => {
+      divToHide.classList.add('hide');
+    }, 800);
+  }
+
+   
+  if (checkNumber % 2 === 0) {
+    divToHide.classList.remove('hide');
+  }
+   
 });
 
 document.addEventListener('scroll', function () {

@@ -157,6 +157,10 @@ li>a:hover {
 .partToHide.hide {
     display: none;
 }
+
+.divToHide.hide {
+    display: none;
+}
 /*------------------- gradient card styling ----------------*/
 .gradient {
     margin-top: 4.8rem;
