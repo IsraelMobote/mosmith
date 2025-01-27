@@ -112,20 +112,20 @@ body {
 }
 
 #menuItems {
+    position: fixed;
     display: grid;
     grid-template-rows: 0fr;
     width: 100%;
+    transition: grid-template-rows 0.8s ease-out;
 }
 
 #menuItems.show {
     position: fixed;
     top: 0rem;
-    display: grid;
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.8s ease-out;
     z-index: 13;
     height: 100vh;
-    overflow: auto;
 }
 
 #menuItems>ul {
