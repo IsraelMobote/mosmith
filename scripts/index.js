@@ -3,7 +3,7 @@ const menuItems = document.querySelector('#menuItems');
 const gradientCard = document.querySelector('.gradient');
 const partToHide = document.querySelectorAll('.partToHide');
 
-const header = document.querySelector('.header');
+
 const divToHide = document.querySelector('.divToHide');
 
 let checkNumber = 0;
@@ -12,15 +12,14 @@ let checkNumber = 0;
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
-  partToHide.forEach(element => {
-    element.classList.toggle('hide');
-  });
-  header.classList.toggle('show');
   
 
   checkNumber = checkNumber + 1;
 
   if (checkNumber % 2 === 1) {
+    partToHide.forEach(element => {
+      element.classList.toggle('hide');
+    });
     setTimeout(() => {
       divToHide.classList.add('hide');
     }, 800);
@@ -29,6 +28,12 @@ menuBars.addEventListener('click', function () {
    
   if (checkNumber % 2 === 0) {
     divToHide.classList.remove('hide');
+
+    setTimeout(() => {
+      partToHide.forEach(element => {
+        element.classList.toggle('hide');
+      });
+    }, 800);
   }
    
 });
