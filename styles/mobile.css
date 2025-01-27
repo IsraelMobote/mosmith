@@ -125,6 +125,7 @@ body {
     transition: grid-template-rows 0.8s ease-out;
     z-index: 13;
     height: 100vh;
+    overflow: auto;
 }
 
 #menuItems>ul {
