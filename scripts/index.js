@@ -17,26 +17,14 @@ menuBars.addEventListener('click', function () {
   checkNumber = checkNumber + 1;
 
   if (checkNumber % 2 === 1) {
-    partToHide.forEach(element => {
-      element.classList.toggle('hide');
-    });
     setTimeout(() => {
       divToHide.classList.add('hide');
     }, 800);
   }
 
-   
   if (checkNumber % 2 === 0) {
-    divToHide.classList.remove('hide');
-
-    setTimeout(() => {
-      partToHide.forEach(element => {
-        element.classList.toggle('hide');
-      });
-    }, 740);
-    
-  }
-   
+    divToHide.classList.remove('hide'); 
+  }  
 });
 
 document.addEventListener('scroll', function () {
@@ -132,7 +120,7 @@ function inView(element) {
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 3;
+  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 4;
 
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
