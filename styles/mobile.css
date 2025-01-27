@@ -113,6 +113,7 @@ body {
 
 #menuItems {
     position: fixed;
+    top: 0rem;
     display: grid;
     grid-template-rows: 0fr;
     width: 100%;
