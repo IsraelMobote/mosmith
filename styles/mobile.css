@@ -37,7 +37,7 @@ header>img {
     width: 30%;
     height: auto;
     border-radius: 0rem;
-    margin: 0.5rem 1rem;
+    margin: 0.7rem 1rem;
 }
 
 header>div {
@@ -100,7 +100,7 @@ header>div>p>a {
     position: fixed;
     top: 0rem;
     width: 100%;
-    height: 4.8rem;
+    height: 5rem;
     background-color: var(--tertiaryColor);
     z-index: 1;
 }
@@ -117,7 +117,7 @@ body {
     display: grid;
     grid-template-rows: 0fr;
     width: 100%;
-    transition: grid-template-rows 0.8s ease-out;
+    transition: grid-template-rows 0.7s ease-out;
     z-index: 13;
 }
 
@@ -129,7 +129,7 @@ body {
 
 #menuItems>ul {
     overflow: hidden;
-    padding: 0 3rem;
+    padding: 0 2rem;
     background-color: rgb(41, 4, 4);
 }
 
@@ -140,7 +140,7 @@ li {
 }
 
 #firstElement {
-    padding-top: 10rem;
+    padding-top: 13rem;
 }
 
 li>a {
@@ -162,7 +162,7 @@ li>a:hover {
 }
 /*------------------- gradient card styling ----------------*/
 .gradient {
-    margin-top: 4.8rem;
+    margin-top: 5rem;
     width: 100%;
     height: 16rem;
     background-image: linear-gradient(to bottom right, rgba(80, 119, 158, 0.829), rgba(255, 255, 255, 0.61)), url("../images/mosmith-heroimage-small.webp");

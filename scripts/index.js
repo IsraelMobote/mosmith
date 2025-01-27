@@ -33,7 +33,8 @@ menuBars.addEventListener('click', function () {
       partToHide.forEach(element => {
         element.classList.toggle('hide');
       });
-    }, 800);
+    }, 740);
+    
   }
    
 });
