@@ -1,18 +1,30 @@
 const menuBars = document.querySelector('#menuBars');
 const menuItems = document.querySelector('#menuItems');
+const gradientCard = document.querySelector('.gradient');
+const partToHide = document.querySelectorAll('.partToHide');
+
+
+const divToHide = document.querySelector('.divToHide');
+
+let checkNumber = 0;
+
 
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
-})
+  
 
-document.addEventListener('scroll', function() {
-  menuItems.classList.add('addSticky');
+  checkNumber = checkNumber + 1;
 
-  if (window.scrollY === 0) {
-   menuItems.classList.remove('addSticky');
+  if (checkNumber % 2 === 1) {
+    setTimeout(() => {
+      divToHide.classList.add('hide');
+    }, 800);
   }
 
+  if (checkNumber % 2 === 0) {
+    divToHide.classList.remove('hide'); 
+  }  
 });
 
 const slider = document.querySelectorAll('.Slider img');
