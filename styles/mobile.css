@@ -83,7 +83,7 @@ header>div>p>a {
 
 #menuBars {
     position: fixed;
-    top: -0.2rem;
+    top: -0.5rem;
     right: 1rem;
     color: white;
     font-size: 4rem;
