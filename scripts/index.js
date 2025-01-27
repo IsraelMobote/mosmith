@@ -1,11 +1,18 @@
 const menuBars = document.querySelector('#menuBars');
 const menuItems = document.querySelector('#menuItems');
 const gradientCard = document.querySelector('.gradient');
+const partToHide = document.querySelectorAll('.partToHide');
+
+const header = document.querySelector('.header');
 
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
-})
+  partToHide.forEach(element => {
+    element.classList.toggle('hide');
+  });
+  header.classList.toggle('show');
+});
 
 document.addEventListener('scroll', function () {
   menuItems.classList.add('addSticky');

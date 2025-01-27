@@ -29,7 +29,11 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: var(--headingsfont);
-    z-index: 2;
+    z-index: 15;
+}
+
+header.show {
+    background-color: rgb(41, 4, 4);
 }
 
 header>img {
@@ -89,7 +93,7 @@ header>div>p>a {
 }
 
 #menuBars.show {
-    background-color: rgba(41, 4, 4, 0.938);
+    background-color: rgb(41, 4, 4);
     padding: 0 5px;
     font-size: 3rem;
     position: fixed;
@@ -98,9 +102,11 @@ header>div>p>a {
 }
 
 /*------------    Main Section Styling   ----------*/
+
 body {
     position: relative;
 }
+
 #menuItems {
     display: grid;
     grid-template-rows: 0fr;
@@ -108,22 +114,20 @@ body {
 }
 
 #menuItems.show {
-    position: absolute;
+    position: fixed;
+    top: 0rem;
     display: grid;
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.5s ease-out;
-    z-index: 8;
-}
-
-#menuItems.show.addSticky {
-    position: sticky;
-    top: 4.8rem;
+    z-index: 10;
+    height: 100vh;
+    padding-top: 5rem;
 }
 
 #menuItems>ul {
     overflow: hidden;
     padding: 0 3rem;
-    background-color: rgba(41, 4, 4, 0.938);
+    background-color: rgb(41, 4, 4);
 }
 
 li {
@@ -141,6 +145,9 @@ li>a:hover {
     color: gold;
 }
 
+.partToHide.hide {
+    display: none;
+}
 /*------------------- gradient card styling ----------------*/
 .gradient {
     margin-top: 4.8rem;
