@@ -4,6 +4,7 @@ const gradientCard = document.querySelector('.gradient');
 const partToHide = document.querySelectorAll('.partToHide');
 
 const header = document.querySelector('.header');
+const divToHide = document.querySelector('.divToHide');
 
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
@@ -12,6 +13,8 @@ menuBars.addEventListener('click', function () {
     element.classList.toggle('hide');
   });
   header.classList.toggle('show');
+
+  if 
 });
 
 document.addEventListener('scroll', function () {
