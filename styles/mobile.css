@@ -152,8 +152,9 @@ body {
     font-size: 2rem;
 }
 
-li>a:hover {
+#menuItems li a:hover {
     color: gold;
+    text-decoration: none;
 }
 
 .partToHide.hide {
