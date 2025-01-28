@@ -130,7 +130,7 @@ body {
 #menuItems>ul {
     overflow: hidden;
     padding: 0 2rem;
-    background-color: rgb(39, 5, 77);
+    background-color: rgb(26, 5, 51);
 }
 
 li {
@@ -486,12 +486,13 @@ li>a:hover {
 }
 
 .aboutUs a {
-    color: navy;
+    font-size: 1.9rem;
+    color: gold;
     text-decoration: none;
 }
 
 .aboutUs a:hover {
-    color: gold;
+    color: skyblue;
 }
 
 /*------------ installation section Styling   ----------*/
@@ -513,7 +514,7 @@ li>a:hover {
 
 .moveInSection>p {
     padding: 0 2rem;
-    margin: 1.2rem 0;
+    margin: 1.2rem 0 3rem;
 }
 
 .moveInSection span {
@@ -571,17 +572,29 @@ li>a:hover {
     padding: 0 5% 0;
 }
 
+.technetwork a {
+    font-weight: 600;
+    padding: 5px 7px;
+    margin-top: 5rem;
+    background-color: var(--tertiaryColor);
+    color: white;
+    text-decoration: none;
+}
+
+.technetwork a:hover {
+    background-color: white;
+    color: navy;
+}
+
 
 .moveInSection .button {
     font-family: var(--headingsfont);
     font-weight: 500;
-    background-color: rgb(80, 119, 158);;
-    padding: 10px;
+    background-color: rgb(80, 119, 158);
     margin: 2rem;
     border: 2px solid navy;
     border-radius: 15px;
     color: white;
-    width: fit-content;
 }
 
 .button:hover {

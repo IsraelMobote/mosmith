@@ -112,7 +112,7 @@ function inView(element) {
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 2;
+  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 4;
 
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
