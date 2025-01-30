@@ -15,7 +15,7 @@ let checkNumber = 0;
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
-  
+
 
   checkNumber = checkNumber + 1;
 
@@ -26,18 +26,18 @@ menuBars.addEventListener('click', function () {
   }
 
   if (checkNumber % 2 === 0) {
-    divToHide.classList.remove('hide'); 
-  }  
+    divToHide.classList.remove('hide');
+  }
 });
 
 const slider = document.querySelectorAll('.Slider img');
 
 slider.forEach(element => {
-    element.classList.add('animate')
-  });
+  element.classList.add('animate')
+});
 
 
-  faqs =
+faqs =
   [
     {
       question: "what is the mottto of our business",
@@ -111,6 +111,7 @@ DisplayFaqs();
 
 document.addEventListener('scroll', function () {
   show();
+  animateJoinUsImage();
 }
 );
 
@@ -135,6 +136,7 @@ function inView(element) {
 }
 
 const growIn = document.querySelectorAll('.growIn');
+const joinUsImage = document.querySelector('.divForJoiningNetwork img');
 
 
 function show() {
@@ -144,5 +146,12 @@ function show() {
       sample.classList.add('animateTwo');
     }
   });
-  
+
+}
+
+function animateJoinUsImage() {
+  // is element in view?
+  if (inView(joinUsImage)) {
+    joinUsImage.classList.add('animate');
+  };
 }

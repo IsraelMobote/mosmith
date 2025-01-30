@@ -102,6 +102,7 @@ DisplayFaqs();
 
 document.addEventListener('scroll', function () {
   show();
+  animateSecondImage();
 }
 );
 
@@ -126,6 +127,7 @@ function inView(element) {
 }
 
 const growIn = document.querySelectorAll('.growIn');
+const secondImage = document.querySelector('.secondImage img');
 
 
 function show() {
@@ -135,5 +137,13 @@ function show() {
       sample.classList.add('animateTwo');
     }
   });
+  
+}
+
+function animateSecondImage() {
+
+    if (inView(secondImage)) {
+      secondImage.classList.add('animate');
+    }
   
 }
