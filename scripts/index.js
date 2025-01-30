@@ -90,15 +90,18 @@ function choseSell() {
 
 }
 
-
 const installationCard = document.querySelector('.moveInSection');
 const growIn = document.querySelectorAll('.growIn');
 
+const technetworkImage = document.querySelector('.technetwork img');
+const sellingItemsImage = document.querySelector('.sellingItems img');
 
 // listen for scroll event and call animate function
 document.addEventListener('scroll', function () {
   animate();
-  show()
+  show();
+  animateTechNetwork();
+  animateSellingItems();
 }
 );
 
@@ -112,7 +115,7 @@ function inView(element) {
   // get current scroll position (distance from the top of the page to the bottom of the current viewport)
   var scrollPosition = scrollY + windowHeight;
   // get element position (distance from the top of the page to the bottom of the element)
-  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 4;
+  var elementPosition = element.getBoundingClientRect().top + scrollY + windowHeight / 3;
 
   // is scroll position greater than element position? (is element in view?)
   if (scrollPosition > elementPosition) {
@@ -142,6 +145,21 @@ function show() {
   });
   
 }
+
+function animateTechNetwork() {
+  // is element in view?
+  if (inView(technetworkImage)) {
+   technetworkImage.classList.add('animate');
+  };
+}
+
+function animateSellingItems() {
+  // is element in view?
+  if (inView(sellingItemsImage)) {
+   sellingItemsImage.classList.add('animate');
+  };
+}
+
 
 
 
