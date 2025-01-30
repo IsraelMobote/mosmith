@@ -16,8 +16,38 @@
         box-sizing: border-box;
     }
 
+
+    #menuItems>p {
+        display: block;
+        font-size: 2rem;
+        color: rgb(82, 132, 207);
+        font-style: italic;
+        padding: 1rem 0 0 2rem;
+        text-shadow: 1px 1px skyblue;
+    }
+
+
+    #menuItems #firstElement {
+        padding-top: 9rem;
+    }
+
     #menuItems li>a {
         font-size: 1.4rem;
+    }
+
+    #menuItems li>a.wayFinder {
+        padding: 0.5rem;
+        margin-left: -0.5rem;
+        background-color: var(--tertiaryColor);
+        border: 3px solid rgb(6, 31, 100);
+        border-radius: 14px;
+        transition: color 0.5s, background-color 1s;
+    }
+
+    #menuItems li>a.wayFinder:hover {
+        font-weight: 600;
+        color: rgb(6, 31, 100);
+        background-color: white;
     }
 
     .gradient {
@@ -67,7 +97,7 @@
         height: 4rem;
     }
 
-    
+
     .slidingText {
         font-size: 1.3rem;
         font-weight: 600;
@@ -103,15 +133,17 @@
         0% {
             transform: translateX(100%);
         }
+
         90% {
             transform: translateX(-350%);
         }
+
         100% {
             transform: translateX(-350%);
         }
     }
 
-    
+
 
 
     header>div {

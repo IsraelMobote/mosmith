@@ -4,6 +4,9 @@ const gradientCard = document.querySelector('.gradient');
 const partToHide = document.querySelectorAll('.partToHide');
 
 
+const menuItemsOptions = document.querySelectorAll('#menuItems ul li a');
+menuItemsOptions[2].classList.add('wayFinder');
+
 const divToHide = document.querySelector('.divToHide');
 
 let checkNumber = 0;

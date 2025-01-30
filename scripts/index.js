@@ -3,6 +3,8 @@ const menuItems = document.querySelector('#menuItems');
 const gradientCard = document.querySelector('.gradient');
 const partToHide = document.querySelectorAll('.partToHide');
 
+const menuItemsOptions = document.querySelectorAll('#menuItems ul li a');
+menuItemsOptions[0].classList.add('wayFinder');
 
 const divToHide = document.querySelector('.divToHide');
 

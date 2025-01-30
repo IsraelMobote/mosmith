@@ -135,6 +135,10 @@ body {
     height: 100vh;
 }
 
+#menuItems > p {
+    display: none;
+}
+
 #menuItems>ul {
     overflow: hidden;
     padding: 0 2rem;
