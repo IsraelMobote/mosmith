@@ -29,7 +29,7 @@ menuBars.addEventListener('click', function () {
 
 
 const slideText = document.querySelector('.slidetext');
-const sentences = ['We dey for you', 'We go run am asap', 'We are one text away'];
+const sentences = ['We Dey for You', 'We Go Run am Asap','We are One Text Away','We Got You Covered','We Go Deliver'];
 let currentSentence = 0;
 
 function slide() {
