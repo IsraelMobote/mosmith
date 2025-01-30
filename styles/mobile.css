@@ -56,6 +56,10 @@ header>div {
     padding:  1px 8px;
 }
 
+.slidingText {
+    display: none;
+}
+
 header>div>p>a {
     text-decoration: none;
     color: black;
@@ -463,6 +467,7 @@ body {
 }
 
 .flip-card-front li {
+    list-style-type: none;
     padding: 0;
     color: gray;
 }
