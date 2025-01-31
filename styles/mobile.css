@@ -181,10 +181,23 @@ body {
     margin-top: 5rem;
     width: 100%;
     height: 16rem;
-    background-image: linear-gradient(to bottom right, rgba(80, 119, 158, 0.829), rgba(255, 255, 255, 0.61)), url("../images/mosmith-heroimage-small.webp");
+    background-image: linear-gradient(to bottom right, rgba(80, 119, 158, 0.829), rgba(255, 255, 255, 0.61));
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.gradient picture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.gradient img {
+    width: 100%;
+    height: 16rem;
 }
 
 .slidetext {
@@ -1348,6 +1361,27 @@ footer .copyright {
 .purple h3 {
     color: #5C065C;
 }
+
+.values h3 {
+    opacity: 0;
+ }
+
+ .values h3.animate {
+    animation: flyIn 0.5s;
+ }
+
+ .values h3.opacity {
+    opacity: 1;
+ }
+
+ @keyframes flyIn {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+ }
 
 /*----------- pop out animation styling ----------*/
 

@@ -166,9 +166,15 @@ function animateCountertwo() {
 
 const ourImpact = document.querySelector('.ourImpact');
 
+
+const growIn = document.querySelectorAll('.growIn');
+const flyIn = document.querySelectorAll('.flyIn');
+
+
 document.addEventListener('scroll', function () {
   activateCounter();
   show();
+  animateValuesHeading();
 }
 );
 
@@ -204,8 +210,6 @@ function activateCounter() {
   }
 }
 
-const growIn = document.querySelectorAll('.growIn');
-
 
 function show() {
 
@@ -215,5 +219,20 @@ function show() {
     }
   });
   
+}
+
+
+function animateValuesHeading() {
+
+   flyIn.forEach(element => {
+    if (inView(element)) {
+      element.classList.add('animate');
+
+      setTimeout(() => {
+        element.classList.add('opacity');
+      }, 300);
+    }
+   });
+
 }
 
