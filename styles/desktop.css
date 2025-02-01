@@ -375,12 +375,17 @@
 
     .increasedMarginTop,
     .increasedMarginTop .backgroundImage {
-        height: 350px;
+        height: 400px;
     }
 
     .increasedMarginTop h1 {
-        font-size: 3rem;
+        font-size: 3.4rem;
         padding-top: 4.5rem;
+    }
+
+    .increasedMarginTop p {
+        font-size: 1.9rem;
+        line-height: 3rem;
     }
 
     .visionSection,
