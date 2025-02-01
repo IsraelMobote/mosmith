@@ -15,7 +15,7 @@ let checkNumber = 0;
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
-  
+
 
   checkNumber = checkNumber + 1;
 
@@ -26,42 +26,43 @@ menuBars.addEventListener('click', function () {
   }
 
   if (checkNumber % 2 === 0) {
-    divToHide.classList.remove('hide'); 
-  }  
+    divToHide.classList.remove('hide');
+  }
 });
 
 
 
 faqs =
-       [
-        {question: "what is the mottto of our business",
-          answer: "it is to cool your nights"
-        },
-      {
-        question:  "what products do you sell",
-        answer: "we sell kitchen appliances, televisions and also generators"
-      },
-      {
-        question: "where is the installation services available to ",
-        answer: "to as many locations in nigeria as possible"
-      },
-      {
-        question: "when was Mosmith established",
-        answer: " it was established in the year 2020"
-      }
-       ]
+  [
+    {
+      question: "what is the mottto of our business",
+      answer: "it is to cool your nights"
+    },
+    {
+      question: "what products do you sell",
+      answer: "we sell kitchen appliances, televisions and also generators"
+    },
+    {
+      question: "where is the installation services available to ",
+      answer: "to as many locations in nigeria as possible"
+    },
+    {
+      question: "when was Mosmith established",
+      answer: " it was established in the year 2020"
+    }
+  ]
 
 const freqAsked = document.querySelector('.freqAsked');
 function DisplayFaqs() {
-   faqs.forEach(element => {
-    
+  faqs.forEach(element => {
+
     const line = document.createElement('hr');
     const div = document.createElement('div');
     div.classList.add('question');
     const ques = document.createElement('p');
     const symbol = document.createElement('span');
     symbol.innerHTML = '▼'
-  
+
     ques.textContent = element.question;
     div.append(ques);
     div.append(symbol);
@@ -79,7 +80,7 @@ function DisplayFaqs() {
 
     let number = 0
 
-    div.addEventListener('click', function() {
+    div.addEventListener('click', function () {
       if (number == 0) {
         symbol.innerHTML = '▲';
         number = 1;
@@ -142,38 +143,38 @@ function show() {
       sample.classList.add('animateTwo');
     }
   });
-  
+
 }
 
 function animateSecondImage() {
 
-    if (inView(secondImage)) {
-      secondImage.classList.add('animate');
-    }
-  
+  if (inView(secondImage)) {
+    secondImage.classList.add('animate');
+  }
+
 }
 
 
 function animatepurposeOfContact() {
 
   blueHeading.forEach(element => {
-   if (inView(element)) {
-     element.classList.add('animate');
-
-     setTimeout(() => {
-       element.classList.add('opacity');
-     }, 300);
-   }
+   addFlyInAnimation(element);
   });
 
   purpleHeading.forEach(element => {
-    if (inView(element)) {
-      element.classList.add('animate');
- 
-      setTimeout(() => {
-        element.classList.add('opacity');
-      }, 300);
-    }
-   });
- 
+   addFlyInAnimation(element);
+  });
+
+}
+
+function addFlyInAnimation(element) {
+
+  if (inView(element)) {
+    element.classList.add('animate');
+
+    setTimeout(() => {
+      element.classList.add('opacity');
+    }, 200);
+  }
+
 }

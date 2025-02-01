@@ -230,7 +230,7 @@ function animateValuesHeading() {
 
       setTimeout(() => {
         element.classList.add('opacity');
-      }, 300);
+      }, 200);
     }
    });
 
