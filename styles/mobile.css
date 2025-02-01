@@ -184,6 +184,7 @@ body {
     background-image: linear-gradient(to bottom right, rgba(80, 119, 158, 0.829), rgba(255, 255, 255, 0.61));
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .gradient picture{
@@ -200,7 +201,7 @@ body {
     height: 16rem;
     transition: transform 0.5s ease-in-out;
     transform: scale(1.7);
-    animation: zoom-out 4s forwards;
+    animation: zoom-out 3s forwards;
 }
 
 @keyframes zoom-out {
@@ -1237,7 +1238,7 @@ footer .copyright {
     height: 21rem;
     transition: transform 0.5s ease-in-out;
     transform: scale(1.7);
-    animation: zoom-out 4s forwards;
+    animation: zoom-out 3s forwards;
 }
 
 /*-------- the zoom-out animation is defined above in the css file
