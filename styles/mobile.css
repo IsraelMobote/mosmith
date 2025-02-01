@@ -184,7 +184,6 @@ body {
     background-image: linear-gradient(to bottom right, rgba(80, 119, 158, 0.829), rgba(255, 255, 255, 0.61));
     background-position: center center;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
 .gradient picture{
@@ -193,11 +192,24 @@ body {
     left: 0;
     width: 100%;
     z-index: -1;
+    overflow: hidden;
 }
 
 .gradient img {
     width: 100%;
     height: 16rem;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.7);
+    animation: zoom-out 4s forwards;
+}
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .slidetext {
@@ -757,13 +769,19 @@ footer .copyright {
 .heroImage {
     position: relative;
     margin-top: 4.8rem;
+    overflow: hidden;
 }
 
 .heroImage img {
     width: 100%;
     height: 19rem;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.7);
+    animation: zoom-out 4s forwards;
 }
 
+/*-------- the zoom-out animation is defined above in the css file
+ in the index html gradient section styling---------*/
 
 .blue,
 .purple {
@@ -786,7 +804,26 @@ footer .copyright {
 .blue h2 {
     color: var(--backgroundColor);
     margin-bottom: 1rem;
+    opacity: 0;
 }
+
+ .blue h2.animate {
+    animation: flyIn 0.5s;
+ }
+
+ .blue h2.opacity {
+    opacity: 1;
+ }
+
+ @keyframes flyIn {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+ }
+
 
 .blue .callButton {
     margin: 0 auto;
@@ -814,7 +851,16 @@ footer .copyright {
 .purple h2 {
     color: rgb(92, 6, 92);
     margin-bottom: 1rem;
+    opacity: 0;
 }
+
+ .purple h2.animate {
+    animation: flyIn 0.5s;
+ }
+
+ .purple h2.opacity {
+    opacity: 1;
+ }
 
 .purple .callButton {
     margin: 0 auto;
@@ -1180,14 +1226,21 @@ footer .copyright {
     position: relative;
     height: 21rem;
     background-color: rgba(37, 54, 71, 0.61);
+    overflow: hidden;
 }
 
-.backgroundImage {
+.increasedMarginTop .backgroundImage {
+    z-index: -1;
     position: absolute;
     width: 100%;
     height: 21rem;
-    z-index: -1;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.7);
+    animation: zoom-out 4s forwards;
 }
+
+/*-------- the zoom-out animation is defined above in the css file
+ in the index html gradient section styling---------*/
 
 .increasedMarginTop p, .increasedMarginTop h1 {
     color: white;
@@ -1374,14 +1427,10 @@ footer .copyright {
     opacity: 1;
  }
 
- @keyframes flyIn {
-    0% {
-        transform: translateY(200%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
- }
+ /*-------- the animation for flyIn is defined in the contact page styling -------*/
+
+ 
+
 
 /*----------- pop out animation styling ----------*/
 

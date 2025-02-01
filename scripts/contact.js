@@ -100,9 +100,18 @@ DisplayFaqs();
 
 // script for the growIn animation on some paragraphs
 
+
+const growIn = document.querySelectorAll('.growIn');
+const secondImage = document.querySelector('.secondImage img');
+const blueHeading = document.querySelectorAll('.blue h2');
+const purpleHeading = document.querySelectorAll('.purple h2');
+
+
+
 document.addEventListener('scroll', function () {
   show();
   animateSecondImage();
+  animatepurposeOfContact();
 }
 );
 
@@ -126,10 +135,6 @@ function inView(element) {
   return false;
 }
 
-const growIn = document.querySelectorAll('.growIn');
-const secondImage = document.querySelector('.secondImage img');
-
-
 function show() {
 
   growIn.forEach(sample => {
@@ -146,4 +151,29 @@ function animateSecondImage() {
       secondImage.classList.add('animate');
     }
   
+}
+
+
+function animatepurposeOfContact() {
+
+  blueHeading.forEach(element => {
+   if (inView(element)) {
+     element.classList.add('animate');
+
+     setTimeout(() => {
+       element.classList.add('opacity');
+     }, 300);
+   }
+  });
+
+  purpleHeading.forEach(element => {
+    if (inView(element)) {
+      element.classList.add('animate');
+ 
+      setTimeout(() => {
+        element.classList.add('opacity');
+      }, 300);
+    }
+   });
+ 
 }

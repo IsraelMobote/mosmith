@@ -60,6 +60,7 @@
     .gradient img{
         height: 350px;
     }
+    
 
     .slidetext {
         font-size: 4.3rem;
@@ -377,6 +378,10 @@
     }
     
      /*--------- About Page Styling ---------*/
+
+     .increasedMarginTop, .increasedMarginTop .backgroundImage {
+        height: 350px;
+     }
 
      .increasedMarginTop h1 {
         font-size: 3rem;
