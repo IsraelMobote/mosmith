@@ -883,20 +883,20 @@ footer .copyright {
 /*----- Sell Section Styling -----*/
 
 .Slider {
-    width: 100%;
+    width: 90%;
     height: 20rem;
     overflow: hidden;
     white-space: nowrap;
     padding: 1rem 0;
     background-color: rgba(253, 250, 250, 0.671);
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 
 .Slider img {
-    width: 90%;
+    width: 100%;
     height: 18rem;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0;
     animation: slidestop 30s infinite;
 }
 
@@ -909,102 +909,44 @@ footer .copyright {
     }
 
     10% {
-        transform: translateX(-100.65%);
+        transform: translateX(-100%);
     }
 
     20% {
-        transform: translateX(-100.65%);
+        transform: translateX(-100%);
     }
 
     24% {
-        transform: translateX(-201.3%);
+        transform: translateX(-200%);
     }
 
     40% {
-        transform: translateX(-201.3%);
+        transform: translateX(-200%);
     }
 
     44% {
-        transform: translateX(-301.95%);
+        transform: translateX(-300%);
     }
 
     60% {
-        transform: translateX(-301.95%);
+        transform: translateX(-300%);
     }
 
     64% {
-        transform: translateX(-402.6%);
+        transform: translateX(-400%);
     }
 
     80% {
-        transform: translateX(-402.6%);
+        transform: translateX(-400%);
     }
 
     84% {
-        transform: translateX(-503.25%);
+        transform: translateX(-500%);
     }
 
     100% {
-        transform: translateX(-503.25%);
+        transform: translateX(-500%);
     }
-}
-
-
-.Slider p {
-    font-size: 15px;
-    font-weight: 900;
-    position: absolute;
-    align-items: center;
-    right: 3%;
-    width: fit-content;
-    padding: 10px 10px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 3px 3px 3px grey;
-}
-#firstIcon {
-    position: absolute;
-    bottom: 30%;
-}
-
-#firstIcon.hide{
-    display: none;
-}
-
-#secondIcon {
-    font-size: 15px;
-    font-weight: 900;
-    position: absolute;
-    bottom: 30%;
-    left: 3%;
-    box-shadow: -3px 3px 3px grey;
-}
-
-#secondIcon.hide {
-    display: none;
-}
-
-.sliderButtons {
-    display: flex;
-    width: 20%;
-    margin: 0 auto 3rem;
-    justify-content: space-between;
-}
-
-.sliderButtons.hide {
-    display: none;
-}
-
-.sliderButtons p {
-    display: inline;
-    background-color: gray;
-    padding: 4px;
-    border-radius: 50%;
-}
-
-.sliderButtons p.active {
-    background-color: rgb(80, 119, 158);
-    padding: 5px;
 }
 
 
