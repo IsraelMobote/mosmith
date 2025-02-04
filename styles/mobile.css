@@ -148,7 +148,6 @@ body {
 #menuItems li {
     list-style-type: none;
     padding: 0.8rem 0 1.5rem 0;
-    text-shadow: 1px 1px 2.5px #fcf9f9;
     text-decoration: underline;
     text-decoration-color: white;
 
