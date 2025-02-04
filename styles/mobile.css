@@ -909,43 +909,43 @@ footer .copyright {
     }
 
     10% {
-        transform: translateX(-100%);
+        transform: translateX(-100.65%);
     }
 
     20% {
-        transform: translateX(-100%);
+        transform: translateX(-100.65%);
     }
 
     24% {
-        transform: translateX(-200%);
+        transform: translateX(-201.3%);
     }
 
     40% {
-        transform: translateX(-200%);
+        transform: translateX(-201.3%);
     }
 
     44% {
-        transform: translateX(-300%);
+        transform: translateX(-301.95%);
     }
 
     60% {
-        transform: translateX(-300%);
+        transform: translateX(-301.95%);
     }
 
     64% {
-        transform: translateX(-400%);
+        transform: translateX(-402.6%);
     }
 
     80% {
-        transform: translateX(-400%);
+        transform: translateX(-402.6%);
     }
 
     84% {
-        transform: translateX(-500%);
+        transform: translateX(-503.25%);
     }
 
     100% {
-        transform: translateX(-500%);
+        transform: translateX(-503.25%);
     }
 }
 
