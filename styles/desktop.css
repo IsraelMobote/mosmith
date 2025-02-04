@@ -223,6 +223,67 @@
         grid-row: 1;
     }
 
+    
+.Slider img {
+    width: 100%;
+    height: 18rem;
+    margin: 0 auto;
+    padding: 0;
+    animation: slidestop 36s infinite;
+    border: 0;
+}
+
+@keyframes slidestop {
+    0% {
+        transform: translateX(0%);
+    }
+    6% {
+        transform: translateX(0%);
+    }
+
+    10% {
+        transform: translateX(-100.5%);
+    }
+
+    20% {
+        transform: translateX(-100.5%);
+    }
+
+    24% {
+        transform: translateX(-201%);
+    }
+
+    40% {
+        transform: translateX(-201%);
+    }
+
+    44% {
+        transform: translateX(-301.5%);
+    }
+
+    60% {
+        transform: translateX(-301.5%);
+    }
+
+    64% {
+        transform: translateX(-402%);
+    }
+
+    80% {
+        transform: translateX(-402%);
+    }
+
+    84% {
+        transform: translateX(-502.5%);
+    }
+
+    100% {
+        transform: translateX(-502.5%);
+    }
+}
+
+
+
     .sellingItems {
         display: grid;
         grid-template-columns: 1fr 1fr;
