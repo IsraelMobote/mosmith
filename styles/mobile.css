@@ -349,66 +349,6 @@ body {
     display: block;
 }
 
-/*------------    animation Styling   ----------*/
-
-.animation {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 20rem;
-    place-content: center;
-    background-color: rgba(206, 204, 224, 0.808);
-    backdrop-filter: blur(25px);
-    z-index: 2;
-}
-
-.animation>img {
-    animation: rotate 2s ease-out;
-}
-
-.animation.hide {
-    display: none;
-}
-
-@keyframes rotate {
-    0% {
-        opacity: 0;
-        width: 32px;
-        transform: rotate(180deg);
-    }
-
-    20% {
-        opacity: 1;
-        width: 64px;
-        transform: rotate(-180deg);
-    }
-
-    40% {
-        opacity: 0;
-        width: 32px;
-        transform: rotate(180deg);
-    }
-
-    60% {
-        opacity: 1;
-        width: 64px;
-        transform: rotate(-180deg);
-    }
-
-    80% {
-        opacity: 0;
-        width: 32px;
-        transform: rotate(180deg);
-    }
-
-    100% {
-        opacity: 1;
-        width: 64px;
-    }
-}
-
-
-
 /*------------    Intro section Styling   ----------*/
 
 .intro>h1 {
@@ -969,43 +909,43 @@ footer .copyright {
     }
 
     10% {
-        transform: translateX(-100.7%);
+        transform: translateX(-100%);
     }
 
     20% {
-        transform: translateX(-100.7%);
+        transform: translateX(-100%);
     }
 
     24% {
-        transform: translateX(-201.4%);
+        transform: translateX(-200%);
     }
 
     40% {
-        transform: translateX(-201.4%);
+        transform: translateX(-200%);
     }
 
     44% {
-        transform: translateX(-302.1%);
+        transform: translateX(-300%);
     }
 
     60% {
-        transform: translateX(-302.1%);
+        transform: translateX(-300%);
     }
 
     64% {
-        transform: translateX(-402.8%);
+        transform: translateX(-400%);
     }
 
     80% {
-        transform: translateX(-402.8%);
+        transform: translateX(-400%);
     }
 
     84% {
-        transform: translateX(-503.5%);
+        transform: translateX(-500%);
     }
 
     100% {
-        transform: translateX(-503.5%);
+        transform: translateX(-500%);
     }
 }
 
