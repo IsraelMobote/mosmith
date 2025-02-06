@@ -56,6 +56,68 @@
 
 <body>
     <header>
+        <!-- Add this code to the HTML of your website's header or footer -->
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://mosmithventures.com",
+  "name": "Mosmith Multiventures and Services",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://mosmithventures.com",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://mosmithventures.com/about",
+          "name": "About"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://mosmithventures/technicians",
+          "name": "Technicians"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@id": "https://mosmithventures/contact",
+          "name": "Contact"
+        }
+      }
+    ]
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "WebPage",
+    "url": "https://example.com",
+    "name": "Example Website",
+    "description": "This is an example website"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "xpath": "//div[@id='main-content']"
+  }
+}
+</script>
+
         <img src="images/mosmith_logoNew.webp" alt="logo of mosmith ventures" loading="lazy">
         <p class="slidingText"><span>At Mosmith Multiventures, we got you covered. We help you install and maintain
                 your home appliances</span></p>
