@@ -14,7 +14,7 @@ let checkNumber = 0;
 menuBars.addEventListener('click', function () {
   menuBars.classList.toggle('show');
   menuItems.classList.toggle('show');
-  
+
 
   checkNumber = checkNumber + 1;
 
@@ -25,13 +25,13 @@ menuBars.addEventListener('click', function () {
   }
 
   if (checkNumber % 2 === 0) {
-    divToHide.classList.remove('hide'); 
-  }  
+    divToHide.classList.remove('hide');
+  }
 });
 
 
 const slideText = document.querySelector('.slidetext');
-const sentences = ['We Dey for You', 'We Go Run am Asap','We are One Text Away','We Got You Covered','We Go Deliver'];
+const sentences = ['We Dey for You', 'We Go Run am Asap', 'We are One Text Away', 'We Got You Covered', 'We Go Deliver'];
 let currentSentence = 0;
 
 function slide() {
@@ -145,20 +145,20 @@ function show() {
       sample.classList.add('animateTwo');
     }
   });
-  
+
 }
 
 function animateTechNetwork() {
   // is element in view?
   if (inView(technetworkImage)) {
-   technetworkImage.classList.add('animate');
+    technetworkImage.classList.add('animate');
   };
 }
 
 function animateSellingItems() {
   // is element in view?
   if (inView(sellingItemsImage)) {
-   sellingItemsImage.classList.add('animate');
+    sellingItemsImage.classList.add('animate');
   };
 }
 
@@ -168,20 +168,28 @@ function animateSellingItems() {
 faqs =
   [
     {
-      question: "what is the mottto of our business",
-      answer: "it is to cool your nights"
+      question: "In which locations are Mosmith installation and maintenance services available?",
+      answer: "Our installation and maintenance services are available nationwide across Nigeria."
     },
     {
-      question: "what products do you sell",
-      answer: "we sell kitchen appliances, televisions and also generators"
+      question: "How quickly can I expect a response from Mosmith Multiventures regarding my requests and concerns?",
+      answer: "Expect a reply from our team within 1 hour for all requests and concerns."
     },
     {
-      question: "where is the installation services available to ",
-      answer: "to as many locations in nigeria as possible"
+      question: "Does Mosmith Multiventures offer any warranty coverage for installation and maintenance work",
+      answer: "We stand behind our work with a one-month warranty, providing full coverage for any issues arising from our installation and maintenance services."
     },
     {
-      question: "when was Mosmith established",
-      answer: " it was established in the year 2020"
+      question: "When was Mosmith founded?",
+      answer: "Since our inception in 2020, Mosmith Multiventures and Services has been dedicated to providing outstanding service."
+    },
+    {
+      question: "What brands of appliances do Mosmith Multiventures work with?",
+      answer: "We work with leading AC and appliance brands in Nigeria, such as LG, Panasonic, Samsung, and Daikin."
+    },
+    {
+      question: "Is Mosmith Multiventures and Services a duly registered company?",
+      answer: "Mosmith Multiventures and Services holds a valid registration with the Corporate Affairs Commission(C.A.C) of Nigeria, ensuring our commitment and reliability."
     }
   ]
 
