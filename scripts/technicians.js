@@ -36,24 +36,31 @@ slider.forEach(element => {
   element.classList.add('animate')
 });
 
-
 faqs =
   [
     {
-      question: "what is the mottto of our business",
-      answer: "it is to cool your nights"
+      question: "In which locations are Mosmith installation and maintenance services available?",
+      answer: "Our installation and maintenance services are available nationwide across Nigeria."
     },
     {
-      question: "what products do you sell",
-      answer: "we sell kitchen appliances, televisions and also generators"
+      question: "How quickly can I expect a response from Mosmith Multiventures regarding my requests and concerns?",
+      answer: "Expect a reply from our team within 1 hour for all requests and concerns."
     },
     {
-      question: "where is the installation services available to ",
-      answer: "to as many locations in nigeria as possible"
+      question: "Does Mosmith Multiventures offer any warranty coverage for installation and maintenance work",
+      answer: "We stand behind our work with a one-month warranty, providing full coverage for any issues arising from our installation and maintenance services."
     },
     {
-      question: "when was Mosmith established",
-      answer: " it was established in the year 2020"
+      question: "When was Mosmith founded?",
+      answer: "Since our inception in 2020, Mosmith Multiventures and Services has been dedicated to providing outstanding service."
+    },
+    {
+      question: "What brands of appliances do Mosmith Multiventures work with?",
+      answer: "We work with leading AC and appliance brands in Nigeria, such as LG, Panasonic, Samsung, and Daikin."
+    },
+    {
+      question: "Is Mosmith Multiventures and Services a duly registered company?",
+      answer: "Mosmith Multiventures and Services holds a valid registration with the Corporate Affairs Commission(C.A.C) of Nigeria, ensuring our commitment and reliability."
     }
   ]
 
