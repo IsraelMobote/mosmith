@@ -57,7 +57,7 @@ faqs =
       question: "Is Mosmith Multiventures and Services a duly registered company?",
       answer: "Mosmith Multiventures and Services holds a valid registration with the Corporate Affairs Commission(C.A.C) of Nigeria, ensuring our commitment and reliability."
     }
-  ]
+  ];
 
 const freqAsked = document.querySelector('.freqAsked');
 function DisplayFaqs() {
