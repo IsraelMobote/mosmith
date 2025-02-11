@@ -633,7 +633,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .freqAsked .question>p {
@@ -649,7 +649,7 @@ body {
     color: white;
     display: grid;
     grid-template-rows: 0fr;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .freqAsked .response>p {
