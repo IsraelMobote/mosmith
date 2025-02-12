@@ -1,0 +1,35 @@
+@media screen and (min-width: 35rem) {
+
+    header>img {
+        margin: 0.8rem 1.5rem;
+    }
+
+    header>div {
+        position: fixed;
+        top: 0.95rem;
+        right: 20%;
+        width: 40%;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    header>div>p>a {
+        font-size: 1.2rem;
+        animation: grow 3s infinite;
+    }
+
+    @keyframes grow {
+        0% {
+            font-size: 1.2rem;
+        }
+
+        50% {
+            font-size: 1.4rem;
+        }
+
+        100% {
+            font-size: 1.2rem;
+        }
+    }
+}
