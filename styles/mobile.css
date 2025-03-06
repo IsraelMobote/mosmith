@@ -1022,11 +1022,14 @@ footer .copyright {
     color: navy
 }
 
+.technicianIntroText {
+    font-size: 1.6rem;
+}
 
-.introText .bold {
-    font-weight: 900;
-    font-size: 1.9rem;
-    color: rgb(37, 54, 71);
+
+.technicianIntroText .bold {
+    color: black;
+    font-size: 1.6rem;
 }
 
 .privilegesSection h2 {
