@@ -300,6 +300,71 @@
         }
     }
 
+    .SliderTwo {
+        height: 21rem;
+        width: 80%;
+        border-radius: 25px;
+    }
+
+    
+    .SliderTwo img {
+        width: 100%;
+        height: 21rem;
+        margin: 0 auto;
+        padding: 0;
+        animation: slidestopTwo 36s infinite;
+        border: 0;
+    }
+
+    @keyframes slidestopTwo {
+        0% {
+            transform: translateX(0%);
+        }
+
+        6% {
+            transform: translateX(0%);
+        }
+
+        10% {
+            transform: translateX(-100.7%);
+        }
+
+        20% {
+            transform: translateX(-100.7%);
+        }
+
+        24% {
+            transform: translateX(-201.5%);
+        }
+
+        40% {
+            transform: translateX(-201.5%);
+        }
+
+        44% {
+            transform: translateX(-302%);
+        }
+
+        60% {
+            transform: translateX(-302%);
+        }
+
+        64% {
+            transform: translateX(-402.5%);
+        }
+
+        80% {
+            transform: translateX(-402.5%);
+        }
+
+        84% {
+            transform: translateX(-503%);
+        }
+
+        100% {
+            transform: translateX(-503%);
+        }
+    }
 
 
     .sellingItems {
