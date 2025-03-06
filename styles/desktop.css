@@ -1,4 +1,14 @@
 @media screen and (min-width: 55rem) {
+
+    :root {
+        --backgroundColor: rgb(20, 17, 150);
+        --tertiaryColor: rgb(80, 119, 158);
+        --secondaryColor: rgba(51, 9, 99, 0.945);
+        --primaryfont: 'PT Serif', serif;
+        --headingsfont: 'Playpen Sans', cursive;
+        --secondaryfont: 'Sofadi One';
+    }
+
     body {
         display: grid;
         grid-template-columns: 25% 75%;
@@ -11,8 +21,7 @@
         grid-row: 1 / 3;
         width: 25%;
         height: 100vh;
-        background-color: rgb(26, 5, 51);
-        border: 4px solid rgb(21, 19, 105);
+        background-color: rgba(198, 198, 224, 0.836);
         box-sizing: border-box;
     }
 
@@ -20,10 +29,10 @@
     #menuItems>p {
         display: block;
         font-size: 2rem;
-        color: rgb(82, 132, 207);
+        font-weight: 800;
+        color: navy;
         font-style: italic;
         padding: 1rem 0 0 2rem;
-        text-shadow: 1px 1px skyblue;
     }
 
 
@@ -35,10 +44,15 @@
         font-size: 1.4rem;
     }
 
+    #menuItems li> a:hover {
+        font-size: 1.6rem
+    }
+
     #menuItems li>a.wayFinder {
         padding: 0.5rem;
         margin-left: -0.5rem;
-        background-color: var(--tertiaryColor);
+        background-color: navy;
+        color: white;
         border: 3px solid rgb(6, 31, 100);
         border-radius: 14px;
         transition: color 0.5s, background-color 1s;
@@ -52,13 +66,13 @@
 
     .gradient {
         position: relative;
-        height: 350px;
+        height: 400px;
         align-content: center;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0.377));
+        background-image: linear-gradient(to bottom, rgba(238, 232, 232, 0.096), rgba(233, 227, 227, 0.158));
     }
 
     .gradient img {
-        height: 350px;
+        height: 400px;
     }
 
 
@@ -66,7 +80,7 @@
         font-size: 4.3rem;
         padding: 2rem 4rem;
         margin: auto 1rem;
-
+        color: rgb(230, 230, 236)
     }
 
     .buyAndSell {
@@ -115,7 +129,7 @@
         height: 2.5rem;
         padding: 2px 1rem 0;
         z-index: 2;
-        color: rgb(243, 210, 118);
+        color: white;
         background-color: rgba(31, 40, 161, 0.979);
         border: 3px solid rgb(10, 10, 10);
         border-radius: 15px;

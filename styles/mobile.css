@@ -142,13 +142,12 @@ body {
 #menuItems>ul {
     overflow: hidden;
     padding: 0 2rem;
-    background-color: rgb(26, 5, 51);
+    background-color: rgba(206, 206, 228, 0.849);
 }
 
 #menuItems li {
     list-style-type: none;
     padding: 0.8rem 0 1.5rem 0;
-    text-decoration: underline;
     text-decoration-color: white;
 
 }
@@ -158,13 +157,13 @@ body {
 }
 
 #menuItems li>a {
-    color: white;
+    font-weight: 700;
+    color: navy;
     text-decoration: none;
     font-size: 2rem;
 }
 
 #menuItems li a:hover {
-    color: gold;
     text-decoration: none;
 }
 
