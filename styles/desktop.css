@@ -11,7 +11,7 @@
 
     body {
         display: grid;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 24% 77%;
         grid-row: 1fr;
     }
 
@@ -19,22 +19,11 @@
         display: block;
         grid-column: 1;
         grid-row: 1 / 3;
-        width: 25%;
+        width: 24%;
         height: 100vh;
         background-color: rgba(198, 198, 224, 0.836);
         box-sizing: border-box;
     }
-
-
-    #menuItems>p {
-        display: block;
-        font-size: 2rem;
-        font-weight: 800;
-        color: navy;
-        font-style: italic;
-        padding: 1rem 0 0 2rem;
-    }
-
 
     #menuItems #firstElement {
         padding-top: 9rem;
@@ -103,7 +92,7 @@
         position: fixed;
         right: 0rem;
         grid-column: 2/3;
-        width: 75%;
+        width: 76%;
         grid-row: 1;
         background-color: rgb(80, 119, 158);
     }

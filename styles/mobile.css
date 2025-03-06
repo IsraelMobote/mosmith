@@ -135,10 +135,6 @@ body {
     height: 100vh;
 }
 
-#menuItems > p {
-    display: none;
-}
-
 #menuItems>ul {
     overflow: hidden;
     padding: 0 2rem;
@@ -339,6 +335,7 @@ body {
 /*------------    Intro section Styling   ----------*/
 
 .intro>h1 {
+    font-family: var(--primaryfont);
     font-size: 2.2rem;
     color: rgb(44, 42, 42);
     padding: 1.5rem 0 0;
@@ -356,12 +353,9 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 0 10px 10px;
-    color: rgb(12, 12, 63);
 }
 
 .intro span {
-    color: green;
-    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -414,7 +408,7 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: rgb(53, 87, 121);;
+    background-color: rgb(53, 87, 121);
     color: white;
 }
 
@@ -452,7 +446,7 @@ body {
 .aboutUs {
     margin: 3rem 0 0;
     padding: 2rem;
-    background-color: var(--secondaryColor);
+    background-color: rgb(53, 87, 121);
     font-size: 1.6rem;
     color: rgb(251, 251, 252);
 }
@@ -463,12 +457,12 @@ body {
 
 .aboutUs a {
     font-size: 1.9rem;
-    color: gold;
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
 }
 
 .aboutUs a:hover {
-    color: skyblue;
+    color: navy;
 }
 
 /*------------ installation section Styling   ----------*/
@@ -494,9 +488,7 @@ body {
 }
 
 .moveInSection span {
-    font-size: 1.5rem;
     font-weight: 600;
-    color: rgb(202, 144, 19);
 }
 
 .container {
