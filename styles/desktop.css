@@ -369,6 +369,21 @@
             grid-column: 2 / 3;
         }
 
+       .gridForSellSection {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-content: center;
+            padding-top: 2rem;
+       }
+
+        .introText {
+            padding-top: 2rem;
+            align-self: center;
+            grid-column: 1 / 2;
+        }
+
+
+
         /*--------- Technicians Page Styling ---------*/
 
         .Slider {
