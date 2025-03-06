@@ -8,7 +8,7 @@
 
 :root {
     --backgroundColor: rgb(20, 17, 150);
-    --tertiaryColor: rgb(80, 119, 158);
+    --tertiaryColor: rgb(53, 87, 121);
     --secondaryColor: rgba(51, 9, 99, 0.945);
     --primaryfont: 'PT Serif', serif;
     --headingsfont: 'Playpen Sans', cursive;
@@ -408,7 +408,7 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: rgb(53, 87, 121);
+    background-color: var(--tertiaryColor);
     color: white;
 }
 
@@ -514,27 +514,23 @@ body {
     border-radius: 2rem;
 }
 
-.sellingItems:hover {
-    color: black;
-    background-color: rgb(247, 247, 250);
-}
-
 .sellingItems>p {
+    font-weight: 500;
     padding: 1rem;
     margin-top: 1rem;
 }
 
 .sellingItems>p>span {
-    color: var(--backgroundColor)
+    color: white;
+    font-weight: 600;
 }
-
 
 .technetwork {
     opacity: 1;
     width: 85%;
     margin: 5rem auto 8rem;
     font-weight: 600;
-    border: 2px solid navy;
+    border: 2px solid var(--tertiaryColor);
 }
 
 .technetwork img {
@@ -556,16 +552,16 @@ body {
 
 .technetwork a:hover {
     background-color: white;
-    color: navy;
+    color: var(--tertiaryColor);
 }
 
 
 .moveInSection .button {
     font-family: var(--headingsfont);
     font-weight: 500;
-    background-color: rgb(80, 119, 158);
+    background-color: var(--tertiaryColor);
     margin: 2rem;
-    border: 2px solid navy;
+    border: 2px solid var(--tertiaryColor);
     border-radius: 15px;
     color: white;
 }
@@ -587,7 +583,7 @@ body {
     background-color: rgb(80, 119, 158);;
     margin: 7rem auto;
     padding: 2rem 1rem;
-    border: 2px solid navy;
+    border: 2px solid var(--tertiaryColor);
     border-radius: 25px;
 }
 
@@ -600,12 +596,12 @@ body {
 }
 
 .contactSection p a:hover {
-    color: gold;
+    color: navy;
 }
 
 .contactSection>p.different {
     background-color: white;
-    color: rgb(8, 48, 8);
+    color: black;
     font-weight: 700;
     border-radius: 25px;
     margin-top: 2rem;
@@ -659,17 +655,18 @@ body {
 footer {
     margin-top: 0.5rem;
     padding: 2rem;
-    background-color: rgba(10, 4, 48, 0.966);
+    background-color: var(--tertiaryColor);
+    text-align: center;
 }
 
 footer h3 {
-    text-decoration: underline;
+    color: rgb(214, 205, 205);
     font-size: 1.4rem;
     padding: 2rem 0 1rem;
 }
 
 footer p>a {
-    color: black;
+   color: rgb(214, 205, 205);
 }
 
 footer p {
@@ -678,6 +675,7 @@ footer p {
 }
 
 footer .copyright {
+    color: rgb(214, 205, 205);
     padding: 4rem 0 1rem;
     text-align: center;
     font-size: 1.4rem;

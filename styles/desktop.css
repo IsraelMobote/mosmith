@@ -2,7 +2,7 @@
 
     :root {
         --backgroundColor: rgb(20, 17, 150);
-        --tertiaryColor: rgb(80, 119, 158);
+        --tertiaryColor: rgb(53, 87, 121);
         --secondaryColor: rgba(51, 9, 99, 0.945);
         --primaryfont: 'PT Serif', serif;
         --headingsfont: 'Playpen Sans', cursive;
@@ -94,7 +94,7 @@
         grid-column: 2/3;
         width: 76%;
         grid-row: 1;
-        background-color: rgb(80, 119, 158);
+        background-color: var(--tertiaryColor);
     }
 
 
